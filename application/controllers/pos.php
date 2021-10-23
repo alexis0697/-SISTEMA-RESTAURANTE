@@ -1512,6 +1512,60 @@ class Pos extends CI_Controller
 
         echo $ticket;
     }
+    public function orderDetailsTable($tableid)
+    {
+        $table = Table::find($tableid);
+        $tableN = $table->name;
+        $posales = Posale::find('all', array(
+            'conditions' => array(
+                'table_id = ?',
+                $tableid
+            )
+        ));
+        foreach ($posales as $posale) {
+            $d1 = new DateTime($posale->time);
+            $d2 = new DateTime($table->checked);
+            if ($d1 < $d2) {
+                $posale->time = 'y';
+            } else {
+                $posale->time = 'n';
+            }
+        }
+        $table->checked = date("Y-m-d H:i:s");
+        $table->save();
+
+
+
+        $ticket = '<div style="max-width: 2.5%;"<div style="clear:both;"><div style="clear:both;"><br><table style="font-size: .9em;" class="table" cellspacing="0" border="0"><thead><tr><th><em>#</em></th><th>' . label("Product") . '</th><th>' . label("Quantity") . '</th></tr></thead><tbody>';
+
+        $i = 1;
+        $clase = '';
+        $estado = '';
+        foreach ($posales as $posale) {
+            //$ticket .= '<tr style="' . ($posale->time == "n" ? 'background-color:#FFC0CB;' : '') . '"><td style="text-align:center; width:30px;">' . $i . '</td><td style="text-align:left; width:180px;">' . $posale->name . '<br><span style="font-size:12px;color:#666">' . rtrim($posale->options, ", ") . '</span></td><td style="text-align:center; width:50px;">' . $posale->qt . '</td><td style="text-align:right; width:100px;font-size:14px; ">' . $this->setting->currency . ' ' . number_format((float)($posale->qt * $posale->price), $this->setting->decimals, '.', '') . '</td></tr>';
+            if ($posale->status_kitchen == 1) {
+                $clase = "unpaid";
+                $estado = "Preparación";
+            } else {
+                $clase = "pais";
+                $estado = "Servido";
+            }
+            $comboEstado = $posale->status_served == 1 ? 'disabled' : '';
+            //<span class="'.$clase.'">'.$estado.'</span>
+            if ($posale->status_served == 1) {
+                $ticket .= '<tr style="background-color:#ecf0f1;"><td style="text-align:center; width:30px;">' . $i . '</td><td style="text-align:left; width:120px;">' . $posale->name . '<br><span style="font-size:12px;color:#666">' . rtrim($posale->options, ", ") . '</span></td><td style="text-align:center; width:50px;">' . $posale->qt . '</td><td style="text-align:right; width:100px;font-size:14px; ">' . $this->setting->currency . ' ' . number_format((float)($posale->qt * $posale->price), $this->setting->decimals, '.', '') . '</td><td style="text-align:right; width:150px;font-size:12px; "><span class="paid">Servido</span></td></tr>';
+            } else {
+                $ticket .= '<tr style="' . ($posale->status_kitchen == 1 ? 'background-color:#ff7979;' : 'background-color:#7bed9f') . '"><td style="text-align:center; width:30px;">' . $i . '</td><td style="text-align:left; width:120px;">' . $posale->name . '<br><span style="font-size:12px;color:#666">' . rtrim($posale->options, ", ") . '</span></td><td style="text-align:center; width:50px;">' . $posale->qt . '</td></tr>';
+            }
+
+            $i++;
+        }
+
+        $ticket .= '</tbody></table>';
+
+
+        echo $ticket;
+    }
 
     public function getoptions($id, $posale)
     {

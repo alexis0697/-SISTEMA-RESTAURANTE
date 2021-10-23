@@ -1516,7 +1516,6 @@ input[type=checkbox]:checked + .label-text:before{
 .tableList{
    text-align: center;
    height: 160px;
-   width: 160px;
    border-radius: 20px;
 }
 .tableList:hover{
@@ -1792,7 +1791,8 @@ input[type=checkbox]:checked + .label-text:before{
 
 .tableList{
    padding: 6px 14px;
-   margin: 10px 15px;
+   margin: 6%;
+   margin-bottom: 1%;
 }
 
 .link_table, .link_table:hover,  .link_table:focus{
