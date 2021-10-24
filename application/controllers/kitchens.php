@@ -42,4 +42,5 @@ class Kitchens extends MY_Controller
     $this->view_data['tables'] = $tables;
     $this->content_view = 'kitchen';
   }
+  
 }

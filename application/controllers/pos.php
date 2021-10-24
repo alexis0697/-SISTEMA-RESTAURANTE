@@ -1553,9 +1553,8 @@ class Pos extends CI_Controller
             $comboEstado = $posale->status_served == 1 ? 'disabled' : '';
             //<span class="'.$clase.'">'.$estado.'</span>
             if ($posale->status_served == 1) {
-                $ticket .= '<tr style="background-color:#ecf0f1;"><td style="text-align:center; width:30px;">' . $i . '</td><td style="text-align:left; width:120px;">' . $posale->name . '<br><span style="font-size:12px;color:#666">' . rtrim($posale->options, ", ") . '</span></td><td style="text-align:center; width:50px;">' . $posale->qt . '</td><td style="text-align:right; width:100px;font-size:14px; ">' . $this->setting->currency . ' ' . number_format((float)($posale->qt * $posale->price), $this->setting->decimals, '.', '') . '</td><td style="text-align:right; width:150px;font-size:12px; "><span class="paid">Servido</span></td></tr>';
             } else {
-                $ticket .= '<tr style="' . ($posale->status_kitchen == 1 ? 'background-color:#ff7979;' : 'background-color:#7bed9f') . '"><td style="text-align:center; width:30px;">' . $i . '</td><td style="text-align:left; width:120px;">' . $posale->name . '<br><span style="font-size:12px;color:#666">' . rtrim($posale->options, ", ") . '</span></td><td style="text-align:center; width:50px;">' . $posale->qt . '</td></tr>';
+                $ticket .= '<tr style="' . ($posale->status_kitchen == 1 ? 'background-color:#ff7979;' : 'background-color:#7bed9f') . '"><td style="text-align:center; width:30px;">' . $i . '</td><td style="text-align:left; width:120px;">' . $posale->name . '<br><span style="font-size:12px;color: #939FA1">' . rtrim($posale->options, ", ") . '</span></td><td style="text-align:center; width:50px;">' . $posale->qt . '</td></tr>';
             }
 
             $i++;

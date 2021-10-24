@@ -1789,12 +1789,17 @@ input[type=checkbox]:checked + .label-text:before{
 }
 
 
-.tableList{
+.tableListKitchen{
    padding: 6px 14px;
    margin: 6%;
    margin-bottom: 1%;
+   height: 160px;    
 }
-
+.tableList{
+   padding: 6px 14px;
+   height: 160px;
+   margin: 10px 15px;
+}
 .link_table, .link_table:hover,  .link_table:focus{
    color: black !important;
 }
