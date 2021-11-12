@@ -188,11 +188,13 @@ $lang['SupplierEmail'] = "Email";
 $lang['AddSupplier'] = "Añadir Proveedor";
 $lang['Supplier'] = "Proveedor";
 
+//
 // ********************* register *********************
 
 $lang['Return'] = "Regresar";
 $lang['RegisterDetails'] = "Registro Detalles";
-$lang['CloseRegister'] = "Cerrar&nbsp;Caja";
+$lang['CloseRegister'] = "Cerrar&nbsp;Caja&nbsp;Parcial";
+$lang['CloseRegisterAll'] = "Cerrar&nbsp;Caja&nbsp;Total";
 $lang['SwitchStore'] = "Cambiar&nbsp;Tienda";
 $lang['open'] = "Abierto";
 $lang['Stillopen'] = "Sigue abierto";
