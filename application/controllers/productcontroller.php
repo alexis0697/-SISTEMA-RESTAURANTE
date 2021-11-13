@@ -150,7 +150,7 @@ class Productcontroller extends CI_Controller
     }
 
 
-    public function modifystock($id) 
+    public function modifystock($id)
     {
       $warehouses = Warehouse::find('all');
       $stores = Store::find('all');

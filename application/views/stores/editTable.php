@@ -15,7 +15,7 @@
          <?php endforeach;?>
       </select>
      <div class="form-group">
-       <button type="submit" class="btn btn-add mt-1"><?=label("Submit");?></button>
+     <button type="submit" class="btn btn-add mt-1"><?=label("Submit");?></button>
      </div>
      <?php echo form_close(); ?>
    </div>

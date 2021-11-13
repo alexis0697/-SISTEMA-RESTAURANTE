@@ -48,14 +48,32 @@
 
       function OpenRegister(status, storeid, userRole) {
          if (status == 0) {
-            $('#waiterscach').load("<?php echo site_url('pos/storewaitercash') ?>/" + storeid, function() {
-               $("[id='waiterid']").on('change', function() {
-                  var waiterID = $(this).attr("waiter-id");
-                  waitersCach[waiterID] = $(this).val();
-               });
+            $.ajax({
+               url: "<?php echo site_url('pos/StatusOpenRegister') ?>/",
+               type: "POST",
+               data: {
+                  storeid: storeid,
+                  userRole: userRole
+               },
+               success: function(data) {
+                  if (data == "0") {
+                     $('#waiterscach').load("<?php echo site_url('pos/storewaitercash') ?>/" + storeid, function() {
+                        $("[id='waiterid']").on('change', function() {
+                           var waiterID = $(this).attr("waiter-id");
+                           waitersCach[waiterID] = $(this).val();
+                        });
+                     });
+                     $('#CashinHand').modal('show');
+                     $('#store').val(storeid);
+                  } else {
+                     swal("<?= label("La caja ya se encuentra cerrada el día de hoy. Ya no se puede aperturar hasta el día siguiente."); ?>");
+                  }
+               },
+               error: function(jqXHR, textStatus, errorThrown) {
+                  alert("error");
+               }
             });
-            $('#CashinHand').modal('show');
-            $('#store').val(storeid);
+
          } else {
             window.location.href = "<?php echo site_url('pos/openregister/') ?>/" + storeid + "/" + userRole;
          }
@@ -139,6 +157,9 @@
          <ul class="cbp-vimenu">
             <?php if ($this->cerrarCaja == 1) { ?>
                <li data-toggle="tooltip" data-html="true" data-placement="left" title="<?= label('CloseRegister'); ?>"><a class="close_register" href="javascript:void(0)" onclick="CloseRegister()"><i class="fa fa-times" aria-hidden="true"></i></a></li>
+            <?php } ?>
+            <?php if ($this->cerrarCaja == 1) { ?>
+               <li data-toggle="tooltip" data-html="true" data-placement="left" title="<?= label('CloseRegisterAll'); ?>"><a class="close_register_all" href="javascript:void(0)" onclick="CloseRegisterAll()"><i class="fa fa-money" aria-hidden="true"></i></a></li>
             <?php } ?>
             <?php if ($this->cambiarTienda == 1) { ?>
                <li data-toggle="tooltip" data-html="true" data-placement="left" title="<?= label('SwitchStore'); ?>"><a class="change_store" href="pos/switshregister"><i class="fa fa-random" aria-hidden="true"></i></a></li>
@@ -230,7 +251,7 @@
                   <i class="fa fa-ticket fa-stack-1x fa-inverse dark-blue"></i>
                </span>
             </a> -->
-                  </div>
+            </div>
                   <div class="col-sm-8">
                      <select class="js-select-options form-control" id="customerSelect">
                         <option value="0"><?= label("WalkinCustomer"); ?></option>
@@ -1097,12 +1118,6 @@
                <?php
                }
                ?>
-
-               //if (groupallorders == 0) {
-
-               //} else {
-
-               //}
             }
 
             function sendToKitchen() {
@@ -1232,7 +1247,7 @@
                         $('#ItemsNum span, #ItemsNum2 span').load("<?php echo site_url('pos/totiems') ?>");
                         $('#Subtot').load("<?php echo site_url('pos/subtotal') ?>", null, null);
                         $('#taxValue').load("<?php echo site_url('pos/igv') ?>", null, null);
-                        $('#total').load("<?php echo site_url('pos/total') ?> siuuuu", null, total_change);
+                        $('#total').load("<?php echo site_url('pos/total') ?>", null, total_change);
                         $('#AddSale').modal('hide');
                         $('#ticket').modal('show');
                         $('#ReturnChange span').text('0');
@@ -1463,7 +1478,7 @@
                            </select>
                         </div>
                         <div class="form-group Paid">
-                           <label for="Paid"><?= label("Paid"); ?> </label>
+                          <label for="Paid"><?= label("Paid"); ?> </label>
                            <input type="number" value="0" <?php if ($delivery_flag) echo "disabled"; ?> name="paid" class="form-control <?= strval($this->setting->keyboard) === '1' ? 'paidk' : '' ?>" id="Paid" placeholder="<?= label("Paid"); ?>">
                         </div>
                         <div class="form-group CreditCardNum">
@@ -1758,6 +1773,73 @@
          });
       }
 
+      function CloseRegisterAll() {
+         $.ajax({
+            url: "<?php echo site_url('pos/CloseRegisterAll') ?>/",
+            type: "POST",
+            success: function(data) {
+               $('#closeregsectionall').html(data);
+               $('#CloseRegisterAll').modal('show');
+               setTimeout(function() {
+                  $('#countedcash').focus()
+               }, 1000);
+               $('#countedcash').on('keyup', function() {
+                  var change = -(parseFloat($('#expectedcash').text()) - parseFloat($(this).val()));
+                  var difftot = change + parseFloat($('#diffcc').text()) + parseFloat($('#diffcheque').text());
+                  var total = parseFloat($('#countedcc').val()) + parseFloat($('#countedcheque').val()) + parseFloat($('#countedcash').val());
+                  $('#countedtotal').text(total.toFixed(<?= $this->setting->decimals; ?>));
+                  $('#difftotal').text(difftot.toFixed(<?= $this->setting->decimals; ?>))
+                  if (change < 0) {
+                     $('#diffcash').text(change.toFixed(<?= $this->setting->decimals; ?>));
+                     $('#diffcash').addClass("red");
+                     $('#diffcash').removeClass("light-blue");
+                  } else {
+                     $('#diffcash').text(change.toFixed(<?= $this->setting->decimals; ?>));
+                     $('#diffcash').removeClass("red");
+                     $('#diffcash').addClass("light-blue");
+                  }
+               });
+
+               $('#countedcc').on('keyup', function() {
+                  var change = -(parseFloat($('#expectedcc').text()) - parseFloat($(this).val()));
+                  var difftot = change + parseFloat($('#diffcash').text()) + parseFloat($('#diffcheque').text());
+                  var total = parseFloat($('#countedcc').val()) + parseFloat($('#countedcheque').val()) + parseFloat($('#countedcash').val());
+                  $('#countedtotal').text(total.toFixed(<?= $this->setting->decimals; ?>));
+                  $('#difftotal').text(difftot.toFixed(<?= $this->setting->decimals; ?>))
+                  if (change < 0) {
+                     $('#diffcc').text(change.toFixed(<?= $this->setting->decimals; ?>));
+                     $('#diffcc').addClass("red");
+                     $('#diffcc').removeClass("light-blue");
+                  } else {
+                     $('#diffcc').text(change.toFixed(<?= $this->setting->decimals; ?>));
+                     $('#diffcc').removeClass("red");
+                     $('#diffcc').addClass("light-blue");
+                  }
+               });
+
+               $('#countedcheque').on('keyup', function() {
+                  var change = -(parseFloat($('#expectedcheque').text()) - parseFloat($(this).val()));
+                  var difftot = change + parseFloat($('#diffcc').text()) + parseFloat($('#diffcash').text());
+                  var total = parseFloat($('#countedcc').val()) + parseFloat($('#countedcheque').val()) + parseFloat($('#countedcash').val());
+                  $('#countedtotal').text(total.toFixed(<?= $this->setting->decimals; ?>));
+                  $('#difftotal').text(difftot.toFixed(<?= $this->setting->decimals; ?>))
+                  if (change < 0) {
+                     $('#diffcheque').text(change.toFixed(<?= $this->setting->decimals; ?>));
+                     $('#diffcheque').addClass("red");
+                     $('#diffcheque').removeClass("light-blue");
+                  } else {
+                     $('#diffcheque').text(change.toFixed(<?= $this->setting->decimals; ?>));
+                     $('#diffcheque').removeClass("red");
+                     $('#diffcheque').addClass("light-blue");
+                  }
+               });
+            },
+            error: function(jqXHR, textStatus, errorThrown) {
+               alert("error");
+            }
+         });
+      }
+
       $('#ticket').on('hidden.bs.modal', function() {
          var groupallorders = <?= $this->setting->groupallorders; ?>;
          if (groupallorders == 1) {
@@ -1798,6 +1880,50 @@
 
                $.ajax({
                   url: "<?php echo site_url('pos/SubmitRegister') ?>/",
+                  type: "POST",
+                  data: {
+                     expectedcash: expectedcash,
+                     countedcash: countedcash,
+                     expectedcc: expectedcc,
+                     countedcc: countedcc,
+                     expectedcheque: expectedcheque,
+                     countedcheque: countedcheque,
+                     RegisterNote: RegisterNote
+                  },
+                  success: function(data) {
+                     window.location.href = "<?php echo site_url() ?>";
+                  },
+                  error: function(jqXHR, textStatus, errorThrown) {
+                     alert("error");
+                  }
+               });
+
+               swal.close();
+            });
+      }
+
+      function SubmitRegisterAll() {
+         var expectedcash = $('#expectedcash').text();
+         var countedcash = $('#countedcash').val();
+         var expectedcc = $('#expectedcc').text();
+         var countedcc = $('#countedcc').val();
+         var expectedcheque = $('#expectedcheque').text();
+         var countedcheque = $('#countedcheque').val();
+         var RegisterNote = $('#RegisterNote').val();
+
+         swal({
+               title: '<?= label("Areyousure"); ?>',
+               text: '<?= label("CloseMessageRegister"); ?>',
+               type: "warning",
+               showCancelButton: true,
+               confirmButtonColor: "#DD6B55",
+               confirmButtonText: '<?= label("yesClose"); ?>',
+               closeOnConfirm: false
+            },
+            function() {
+
+               $.ajax({
+                  url: "<?php echo site_url('pos/SubmitRegisterAll') ?>/",
                   type: "POST",
                   data: {
                      expectedcash: expectedcash,
@@ -1895,6 +2021,27 @@
             </div>
             <div class="modal-footer">
                <a href="javascript:void(0)" onclick="SubmitRegister()" class="btn btn-red col-md-12 flat-box-btn"><?= label("CloseRegister"); ?></a>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- /.Modal -->
+
+   <!-- Modal close register -->
+   <div class="modal fade" id="CloseRegisterAll" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-backdrop="static" data-keyboard="false">
+      <div class="modal-dialog modal-lg" role="document">
+         <div class="modal-content">
+            <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+               <h4 class="modal-title" id="myModalLabel"><?= label("CloseRegisterAll"); ?></h4>
+            </div>
+            <div class="modal-body">
+               <div id="closeregsectionall">
+                  <!-- close register detail goes here -->
+               </div>
+            </div>
+            <div class="modal-footer">
+               <a href="javascript:void(0)" onclick="SubmitRegisterAll()" class="btn btn-red col-md-12 flat-box-btn"><?= label("CloseRegisterAll"); ?></a>
             </div>
          </div>
       </div>

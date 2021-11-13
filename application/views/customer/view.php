@@ -138,9 +138,9 @@
         </div>
 
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-md-6">
             <div class="form-group">
-              <label for="CustomerDiscount"><?= label("CustomerAddress"); ?></label>
+            <label for="CustomerDiscount"><?= label("CustomerAddress"); ?></label>
               <textarea name="discount" class="form-control" id="CustomerDiscount" id="exampleFormControlTextarea1" rows="3" placeholder="<?= label("CustomerAddress"); ?>"></textarea>
             </div>
           </div>

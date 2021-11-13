@@ -34,6 +34,7 @@ function showOrderTable(table) {
         },
         error: function(jqXHR, textStatus, errorThrown) {
             alert("error");
+            console.log(errorThrown)
         }
     });
     //$('#ticket').modal('show');
@@ -86,7 +87,7 @@ function cambiarEstadoPlato(select, id) {
             <?php if ($table->status == 1) { ?>
             <div class="col-sm-2 col-xs-4 tableListKitchen tableCook nohover-item">
                 <?php if ($table->time == 'n') { ?><span class="tablenotif">.</span><?php } ?>
-                <a class="btn btn-lg kitchentable-btn enabled" href="javascript:void(0)"
+                <a class="btn btn-lg kitchentableList-btn enabled" href="javascript:void(0)"
                     onclick="showticket(<?= $table->id; ?>)">
                     <?= $table->name; ?>
                     <!--<img src="<?= base_url() ?>assets/img/cooking.png" alt="<?= $table->name; ?>">-->

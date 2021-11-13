@@ -159,7 +159,7 @@ class Products extends MY_Controller
         $this->view_data['suppliers'] = Supplier::all();
         $this->view_data['units_measurements'] = Unit_measurement::all();
         date_default_timezone_set($this->setting->timezone);
-        $date = date("Y-m-d H:i:s"); 
+        $date = date("Y-m-d H:i:s");
         if ($_POST) {
             $config['upload_path'] = './files/products/';
             $config['encrypt_name'] = TRUE;

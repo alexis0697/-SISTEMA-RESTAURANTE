@@ -21,10 +21,10 @@
          </div>
          <div class="col-md-6">
             <div class="form-group">
-               <label for="CustomerNit"><?= label("NIT"); ?></label>
-               <input required type="text" value="<?= $customer->nit; ?>" maxlength="20" name="nit" class="form-control" id="CustomerNit" placeholder="<?= label("NIT"); ?>">
+              <label for="CustomerNit"><?= label("NIT"); ?></label>
+              <input required type="text"  value="<?= $customer->nit; ?>" maxlength="20" name="nit" class="form-control" id="CustomerNit" placeholder="<?= label("NIT"); ?>">
             </div>
-         </div>
+          </div>
       </div>
       <div class="row">
          <div class="col-md-6">
@@ -74,6 +74,7 @@
             </div>
          </div>
       </div>
+
 
 
       <div class="row">

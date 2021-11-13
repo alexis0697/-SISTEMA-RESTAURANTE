@@ -11,6 +11,7 @@ class Pos extends CI_Controller
         parent::__construct();
         $lang = $this->session->userdata("lang") == null ? "english" : $this->session->userdata("lang");
         $this->lang->load($lang, $lang);
+        $this->user = $this->session->userdata('user_id') ? User::find_by_id($this->session->userdata('user_id')) : FALSE;
         $this->register = $this->session->userdata('register') ? $this->session->userdata('register') : FALSE;
         $this->store = $this->session->userdata('store') ? $this->session->userdata('store') : FALSE;
         $this->selectedTable = $this->session->userdata('selectedTable') ? $this->session->userdata('selectedTable') : FALSE;
@@ -464,7 +465,7 @@ class Pos extends CI_Controller
     {
         $customer = Customer::find($id);
         $Discount = stripos($customer->discount, '%') > 0 ? $customer->discount : number_format((float)$customer->discount, $this->setting->decimals, '.', '');
-        echo $Discount . '~' . $customer->name . " " . $customer->lastname;
+        echo $Discount . '~' . $customer->name;
     }
 
     public function ResetPos()
@@ -736,17 +737,8 @@ class Pos extends CI_Controller
         $dateFormat = strtotime($sale->created_at);
         $newDateFormat = date('d/m/Y H:i', $dateFormat);
 
-        //find cx address and name
-        if ($sale->client_id == 0) {
-            $customer_info = $sale->clientname;
-        } else {
-            $customer = Customer::find($sale->client_id);
-            $customer_firstname = $customer->name;
-            $customer_lastname = $customer->lastname;
-            $customer_address = $customer->discount;
-            $customer_info = $customer_firstname . " " . $customer_lastname . " \nDirrección: " . $customer_address;
-        }
-        $ticket = '<input type="hidden" name="idSale" id="idSale" value="' . base64_encode($sale->id) . '"><div class="col-md-12"><div class="text-center"><img src="files/Setting/' . $this->setting->logo . '" alt="" width="80px" style="margin-bottom: 10px"/></div><div class="text-center">' . $this->setting->receiptheader . '</div><div style="clear:both;"><h4 class="text-center"><b>' . $nameTypeDocument . ' : ' . sprintf("%08d", $sale->id) . '</b></h4><p style="text-align: center; line-height: 1.2;">-----------------------------------</p><div style="clear:both;"></div><span class="float-left">' . label("DateHourEmition") . ': ' . $newDateFormat . '</span><div style="clear:both;"><span class="float-left">' . label("CustomerTicket") . ': ' . $customer_info . '</span><div style="clear:both;"></div><table class="table" cellspacing="0" border="0"><thead><tr><th><em>#</em></th><th>' . label("Product") . '</th><th>' . label("Quantity") . '</th><th>' . label("SubTotal") . '</th></tr></thead><tbody>';
+
+        $ticket = '<input type="hidden" name="idSale" id="idSale" value="' . base64_encode($sale->id) . '"><div class="col-md-12"><div class="text-center"><img src="files/Setting/' . $this->setting->logo . '" alt="" width="80px" style="margin-bottom: 10px"/></div><div class="text-center">' . $this->setting->receiptheader . '</div><div style="clear:both;"><h4 class="text-center"><b>' . $nameTypeDocument . ' : ' . sprintf("%08d", $sale->id) . '</b></h4><p style="text-align: center; line-height: 1.2;">-----------------------------------</p><div style="clear:both;"></div><span class="float-left">' . label("DateHourEmition") . ': ' . $newDateFormat . '</span><div style="clear:both;"><span class="float-left">' . label("CustomerTicket") . ': ' . $sale->clientname . '</span><div style="clear:both;"></div><table class="table" cellspacing="0" border="0"><thead><tr><th><em>#</em></th><th>' . label("Product") . '</th><th>' . label("Quantity") . '</th><th>' . label("SubTotal") . '</th></tr></thead><tbody>';
 
         $i = 1;
         foreach ($posales as $posale) {
@@ -1089,6 +1081,147 @@ class Pos extends CI_Controller
         echo $data;
     }
 
+    public function CloseRegisterAll()
+    {
+        $cutOffCounter = 1;
+        try {
+            $register = Register::find($this->register);
+            $registerAll = Register::find('all', array(
+                'conditions' => array(
+                    'user_id = ? AND register_close_all = ?',
+                    $this->user->id,
+                    0
+                )
+            ));
+
+            $CashinHandAll = 0;
+            $idsAll = array();
+            foreach ($registerAll as $item) {
+                $CashinHandAll += $item->cash_inhand;
+                array_push($idsAll, $item->id);
+            }
+
+            $user = User::find($register->user_id);
+            $sales = Sale::find('all', array(
+                'conditions' => array(
+                    'register_id in(?) AND canceled = ?',
+                    $idsAll,
+                    0
+                )
+            ));
+            $payaments = Payement::find('all', array(
+                'conditions' => array(
+                    'register_id in(?)',
+                    $idsAll
+                )
+            ));
+
+            $waiters = Waiter::find('all', array('conditions' => array('store_id = ?', $register->store_id)));
+
+            $cash = 0;
+            $cheque = 0;
+            $cc = 0;
+            // $CashinHand = $register->cash_inhand;
+            $CashinHand = $CashinHandAll;
+            $date = $register->date;
+            $createdBy = $user->firstname . ' ' . $user->lastname;
+
+            foreach ($payaments as $payament) {
+                $PayMethode = explode('~', $payament->paidmethod);
+                switch ($PayMethode[0]) {
+                    case '1': // case Credit Card
+                        $cc += $payament->paid;
+                        break;
+                    case '2': // case ckeck
+                        $cheque += $payament->paid;
+                        break;
+                    default:
+                        $cash += $payament->paid;
+                }
+            }
+
+            foreach ($sales as $sale) {
+                $PayMethode = explode('~', $sale->paidmethod);
+                $paystatus = $sale->paid - $sale->total;
+                switch ($PayMethode[0]) {
+                    case '1': // case Credit Card
+                        $cc += $paystatus > 0 ? $sale->total : $sale->firstpayement;
+                        break;
+                    case '2': // case ckeck
+                        $cheque += $paystatus > 0 ? $sale->total : $sale->firstpayement;
+                        break;
+                    default:
+                        $cash += $paystatus > 0 ? $sale->total : $sale->firstpayement;
+                }
+            }
+            $data = '<div class="col-md-3"><blockquote><footer>' . label("Openedby") . '</footer><p>' . $createdBy . '</p></blockquote></div><div class="col-md-3"><blockquote><footer>' . label("CashinHand") . '</footer><p>' . $this->setting->currency . ' ' . number_format((float)$CashinHand, $this->setting->decimals, '.', '') . '</p></blockquote></div><div class="col-md-4"><blockquote><footer>' . label("Fecha") . '</footer><p>' . date('Y-m-d h:i:s') . '</p></blockquote></div><div class="col-md-2"><img src="' . site_url() . '/assets/img/register.svg" alt=""></div><h2>' . label("PaymentsSummary") . '</h2><div class="table-responsive"><table class="table table-striped"><tr><th width="25%">' . label("PayementType") . '</th><th width="25%">' . label("EXPECTED") . ' (' . $this->setting->currency . ')</th><th width="25%">' . label("COUNTED") . ' (' . $this->setting->currency . ')</th><th width="25%">' . label("DIFFERENCES") . ' (' . $this->setting->currency . ')</th></tr><tr><td>' . label("Cash") . '</td><td><span id="expectedcash">' . number_format((float)$cash, $this->setting->decimals, '.', '') . '</span></td><td><input type="text" class="form-control" value="' . number_format((float)$cash, $this->setting->decimals, '.', '') . '" placeholder="0.00"  maxlength="11" id="countedcash"></td><td><span id="diffcash">0.00</span></td></tr><tr><td>' . label("CreditCard") . '</td><td><span id="expectedcc">' . number_format((float)$cc, $this->setting->decimals, '.', '') . '</span></td><td><input type="text" class="form-control" value="' . number_format((float)$cc, $this->setting->decimals, '.', '') . '" placeholder="0.00"  maxlength="11" id="countedcc"></td><td><span id="diffcc">0.00</span></td></tr><tr><td>' . label("Yape") . '</td><td><span id="expectedcheque">' . number_format((float)$cheque, $this->setting->decimals, '.', '') . '</span></td><td><input type="text" class="form-control" value="' . number_format((float)$cheque, $this->setting->decimals, '.', '') . '" placeholder="0.00"  maxlength="11" id="countedcheque"></td><td><span id="diffcheque">0.00</span></td></tr><tr class="warning"><td>' . label("Total") . '</td><td><span id="total">' . number_format((float)($cheque + $cash + $cc), $this->setting->decimals, '.', '') . '</span></td><td><span id="countedtotal">' . number_format((float)($cheque + $cash + $cc), $this->setting->decimals, '.', '') . '</span></td><td><span id="difftotal">0.00</span></td></tr></table></div>';
+
+            foreach ($waiters as $waiter) {
+                foreach ($registerAll as $item) {
+                    $cih = explode(',', trim($item->waiterscih, ","));
+                    $cachin = 0;
+                    for ($i = 0; $i < sizeof($cih); $i += 2) {
+                        if ($cih[$i] == $waiter->id) {
+                            $cachin = $cih[$i + 1];
+                        }
+                    }
+                    $cashw = 0;
+                    $chequew = 0;
+                    $ccw = 0;
+                    foreach ($payaments as $payament) {
+                        if ($payament->waiter_id == $waiter->id) {
+                            $PayMethode = explode('~', $payament->paidmethod);
+                            switch ($PayMethode[0]) {
+                                case '1': // case Credit Card
+                                    $ccw += $payament->paid;
+                                    break;
+                                case '2': // case ckeck
+                                    $chequew += $payament->paid;
+                                    break;
+                                default:
+                                    $cashw += $payament->paid;
+                            }
+                        }
+                    }
+                    foreach ($sales as $sale) {
+                        if ($sale->waiter_id == $waiter->id) {
+                            $PayMethode = explode('~', $sale->paidmethod);
+                            $paystatus = $sale->paid - $sale->total;
+                            switch ($PayMethode[0]) {
+                                case '1': // case Credit Card
+                                    $ccw += $paystatus > 0 ? $sale->total : $sale->firstpayement;
+                                    break;
+                                case '2': // case ckeck
+                                    $chequew += $paystatus > 0 ? $sale->total : $sale->firstpayement;
+                                    break;
+                                default:
+                                    $cashw += $paystatus > 0 ? $sale->total : $sale->firstpayement;
+                            }
+                        }
+                    }
+                    $Wtotal = $ccw + $chequew + $cashw + $cachin;
+                }
+                $data .= '<div class="waitercount"><ul><li><h4>' . $waiter->name . ' :</h4></li><li><b>' . label("CashinHand") . ' : </b>' . number_format((float)$cachin, $this->setting->decimals, '.', '') . ' ' . $this->setting->currency . '</li><li><b>' . label("Cash") . ' : </b>' . number_format((float)$cashw, $this->setting->decimals, '.', '') . ' ' . $this->setting->currency . '</li><li><b>' . label("CreditCard") . ' : </b>' . number_format((float)$ccw, $this->setting->decimals, '.', '') . ' ' . $this->setting->currency . '</li><li><b>' . label("Yape") . ' : </b>' . number_format((float)$chequew, $this->setting->decimals, '.', '') . ' ' . $this->setting->currency . '</li></ul><div style="clear:both;"></div><div class="wtotal"><h3>' . label("Total") . ' : ' . number_format((float)$Wtotal, $this->setting->decimals, '.', '') . '</h3></div></div>';
+            }
+            $data .= "<h2> Cortes del día</h2>";
+            $totalCash = 0;
+            foreach ($registerAll as $r) {
+                $cutOffTime = date("H:i:s", strtotime(($r->date)));
+                $user = User::find($r->user_id);
+                $username = ($user->firstname . " " . $user->lastname);
+                if ($r->cash_total != 0) {
+                    $totalCash = $r->cash_total;
+                    $data .= '<div class="waitercount"><ul><li><h4> Corte #' . $cutOffCounter++ . '</h4></li><li><b>' . label("cutOffAmount") . ' : ' . number_format((float)$totalCash, $this->setting->decimals, '.', '') . ' ' . $this->setting->currency . '</b></li><li><b>' . label("cutOffTime") . ' : </b>' . $cutOffTime . '</li><li><b>' . label("cutOffPerson") . ' : </b>' . $username . '</li></ul><div style="clear:both;"></div><div class="wtotal"><h3>' . label("Total") . ' : ' . number_format((float)$totalCash, $this->setting->decimals, '.', '') . ' ' . $this->setting->currency . '</h3></div></div>';
+                }
+            }
+            $data .= '<div  class="form-group"><h2>' . label("note") . '</h2><textarea id="RegisterNote" class="form-control" rows="3"></textarea></div>';
+
+            echo $data;
+        } catch (\Exception $e) {
+            die($e->getMessage());
+        }
+    }
+
     public function SubmitRegister()
     {
         date_default_timezone_set($this->setting->timezone);
@@ -1131,6 +1264,84 @@ class Pos extends CI_Controller
             'conditions' => array(
                 'register_id = ?',
                 $Register->id
+            )
+        ));
+
+        $CI = &get_instance();
+        $CI->session->set_userdata('register', 0);
+
+        echo json_encode(array(
+            "status" => TRUE
+        ));
+    }
+
+    public function SubmitRegisterAll()
+    {
+        date_default_timezone_set($this->setting->timezone);
+        $date = date("Y-m-d H:i:s");
+        $data = array(
+            "cash_total" => $this->input->post('expectedcash'),
+            "cash_sub" => $this->input->post('countedcash'),
+            "cc_total" => $this->input->post('expectedcc'),
+            "cc_sub" => $this->input->post('countedcc'),
+            "cheque_total" => $this->input->post('expectedcheque'),
+            "cheque_sub" => $this->input->post('countedcheque'),
+            "note" => $this->input->post('RegisterNote'),
+            "closed_by" => $this->session->userdata('user_id'),
+            "closed_at" => $date,
+            "status" => 0,
+            "store_id" => $this->store,
+            "user_id" => $this->user->id,
+        );
+
+        $Register = RegisterAll::create($data);
+
+        $store = Store::find($Register->store_id);
+        $store->status = 0;
+        $store->save();
+
+        $tables = Table::find('all', array('conditions' => array('store_id = ?', $Register->store_id)));
+        foreach ($tables as $table) {
+            $table->status = 0;
+            $table->time = '';
+            $table->save();
+        }
+
+        // $Register->update_attributes($data);
+
+        $registerAll = Register::find('all', array(
+            'conditions' => array(
+                'user_id = ? AND register_close_all = ?',
+                $this->user->id,
+                0
+            )
+        ));
+
+        $idsAll = array();
+
+        foreach ($registerAll as $item) {
+            array_push($idsAll, $item->id);
+            Hold::delete_all(array(
+                'conditions' => array(
+                    'register_id = ?',
+                    $item->id
+                )
+            ));
+            Posale::delete_all(array(
+                'conditions' => array(
+                    'register_id = ?',
+                    $item->id
+                )
+            ));
+        }
+
+        Register::update_all(array(
+            'set' => array(
+                'register_close_all' => 1
+            ),
+            'conditions' => array(
+                'id in(?)',
+                $idsAll
             )
         ));
 
@@ -1221,15 +1432,7 @@ class Pos extends CI_Controller
                     1
                 )
             ));
-            if ($sale->client_id == 0) {
-                $customer_info = $sale->clientname;
-            } else {
-                $customer = Customer::find($sale->client_id);
-                $customer_firstname = $customer->name;
-                $customer_lastname = $customer->lastname;
-                $customer_address = $customer->discount;
-                $customer_info = $customer_firstname . " " . $customer_lastname . " \nDirrección: " . $customer_address;
-            }
+
             $nameTypeDocument = strtoupper($document[0]->parameter_description);
             $dateFormat = strtotime($sale->created_at);
             $newDateFormat = date('d/m/Y H:i', $dateFormat);
@@ -1250,7 +1453,7 @@ class Pos extends CI_Controller
             $ticket .= '     <td style="text-align:left"><p>' . label("DateHourEmition") . ': ' . $newDateFormat . '</p></td>';
             $ticket .= ' </tr>';
             $ticket .= ' <tr>';
-            $ticket .= '     <td style="text-align:left"><p>' . label("CustomerTicket") . ': ' . $customer_info. '</p></td>';
+            $ticket .= '     <td style="text-align:left"><p>' . label("CustomerTicket") . ': ' . $sale->clientname . '</p></td>';
             $ticket .= ' </tr>';
             $ticket .= ' <tr>';
             $ticket .= '     <td style="text-align:center"><p>...............................................................................</p></td>';
@@ -1736,19 +1939,19 @@ class Pos extends CI_Controller
             $ticket = '<div class="col-md-12"><div class="text-center"><b><h4 style="padding-bottom: 15px;font-weight: bold;">TICKET DE PEDIDO</h4></b></div><div style="clear:both;"><div style="clear:both;"><div style="clear:both;"><span class="float-left">' . label("Date") . ' : ' . $date . '</span><br><div style="clear:both;"><span class="float-left">' . label("Waiter") . ' : ' . $waiterN . '<br> ' . label("Table") . ' : ' . $tableN . '<br>' . label("Detalles de entrega") . ' : <br>' . $customerInfo . '</span><div style="clear:both;"><br><table class="table" cellspacing="0" border="0"><thead><tr><th><em>#</em></th><th>' . label("Product") . '</th><th>' . label("Quantity") . '</th></tr></thead><tbody>';
 
             $i = 1;
-            $itemsCount =0;
+            $itemsCount = 0;
             foreach ($posales as $posale) {
                 $ticket .= '<tr><td style="text-align:center; width:30px;">' . $i . '</td><td style="text-align:left; width:180px;">' . $posale->name . '<br><span style="font-size:12px;color:#666">' . rtrim($posale->options, ", ") . '</span></td><td style="text-align:center; width:50px;">' . $posale->qt . '</td></tr>';
                 $i++;
                 $subtotal += (float)($posale->qt * $posale->price);
-                $itemsCount+=$posale->qt;
+                $itemsCount += $posale->qt;
             }
 
-            $ticket .= '</tbody></table><table class="table" cellspacing="0" border="0" style="margin-bottom:8px;"><tbody><tr><td style="text-align:left;">' . label("Productos en venta") . '</td><td style="text-align:left; padding-right:4px;">' . $totalitems .'</td></tr>';
+            $ticket .= '</tbody></table><table class="table" cellspacing="0" border="0" style="margin-bottom:8px;"><tbody><tr><td style="text-align:left;">' . label("Productos en venta") . '</td><td style="text-align:left; padding-right:4px;">' . $totalitems . '</td></tr>';
             //Total price for the items
-            $ticket .='<tr><td style="text-align:left;">' . label("TotalItems") . '</td><td style="text-align:left; padding-right:4px;">' . $itemsCount .'</td></tr>';
+            $ticket .= '<tr><td style="text-align:left;">' . label("TotalItems") . '</td><td style="text-align:left; padding-right:4px;">' . $itemsCount . '</td></tr>';
             //Total price for the items
-            $ticket .='<tr><td style="text-align:left;">' . label("GrandTotal") . '</td><td style="text-align:left; padding-right:4px;">$' . $subtotal .'</td></tr>';
+            $ticket .= '<tr><td style="text-align:left;">' . label("GrandTotal") . '</td><td style="text-align:left; padding-right:4px;">$' . $subtotal . '</td></tr>';
 
             $ticket .= '</tbody></table><br><div style="border-top:1px solid #000; padding-top:10px;"><div style="clear:both;"><p class="text-center" style="margin:0 auto;margin-top:10px;">' . $store->footer_text . '</p></div><br><br>';
 
@@ -1757,6 +1960,7 @@ class Pos extends CI_Controller
             die($e->getMessage());
         }
     }
+
 
     public function getTotalItemsAllHolds()
     {
@@ -1834,5 +2038,31 @@ class Pos extends CI_Controller
             )
         ));
         echo 1;
+    }
+
+    public function StatusOpenRegister()
+    {
+        try {
+            $storeid = $this->input->post('storeid');
+            $userRole = $this->input->post('userRole');
+
+            $registerAll = RegisterAll::find('all', array(
+                'conditions' => array(
+                    'user_id = ? AND store_id = ? AND DATE_FORMAT(date,"%Y-%m-%d") = ?',
+                    $this->user->id,
+                    $storeid,
+                    date("Y-m-d"),
+                )
+            ));
+
+            $status = 0;
+            if (count($registerAll) > 0) {
+                $status = 1;
+            }
+
+            echo $status;
+        } catch (\Exception $e) {
+            die($e->getMessage());
+        }
     }
 }
