@@ -3475,3 +3475,751 @@ ERROR - 2021-11-13 06:06:44 --> Severity: 8192  --> Function mcrypt_get_iv_size(
 ERROR - 2021-11-13 06:06:44 --> Severity: 8192  --> Function mcrypt_decrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 346
 ERROR - 2021-11-13 06:06:49 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 337
 ERROR - 2021-11-13 06:06:49 --> Severity: 8192  --> Function mcrypt_decrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 346
+ERROR - 2021-11-13 06:07:04 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 337
+ERROR - 2021-11-13 06:07:04 --> Severity: 8192  --> Function mcrypt_decrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 346
+ERROR - 2021-11-13 06:07:47 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 337
+ERROR - 2021-11-13 06:07:47 --> Severity: 8192  --> Function mcrypt_decrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 346
+ERROR - 2021-11-13 06:08:02 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 337
+ERROR - 2021-11-13 06:08:02 --> Severity: 8192  --> Function mcrypt_decrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 346
+ERROR - 2021-11-13 06:08:47 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 337
+ERROR - 2021-11-13 06:08:47 --> Severity: 8192  --> Function mcrypt_decrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 346
+ERROR - 2021-11-13 06:09:02 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 337
+ERROR - 2021-11-13 06:09:02 --> Severity: 8192  --> Function mcrypt_decrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 346
+ERROR - 2021-11-13 06:09:46 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 337
+ERROR - 2021-11-13 06:09:46 --> Severity: 8192  --> Function mcrypt_decrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 346
+ERROR - 2021-11-13 06:10:01 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 337
+ERROR - 2021-11-13 06:10:01 --> Severity: 8192  --> Function mcrypt_decrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 346
+ERROR - 2021-11-13 06:10:44 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 337
+ERROR - 2021-11-13 06:10:44 --> Severity: 8192  --> Function mcrypt_decrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 346
+ERROR - 2021-11-13 06:10:59 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 337
+ERROR - 2021-11-13 06:10:59 --> Severity: 8192  --> Function mcrypt_decrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 346
+ERROR - 2021-11-13 06:11:46 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 337
+ERROR - 2021-11-13 06:11:46 --> Severity: 8192  --> Function mcrypt_decrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 346
+ERROR - 2021-11-13 06:11:46 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 06:11:46 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 06:11:46 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 06:12:01 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 337
+ERROR - 2021-11-13 06:12:01 --> Severity: 8192  --> Function mcrypt_decrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 346
+ERROR - 2021-11-13 06:12:45 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 337
+ERROR - 2021-11-13 06:12:45 --> Severity: 8192  --> Function mcrypt_decrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 346
+ERROR - 2021-11-13 06:13:00 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 337
+ERROR - 2021-11-13 06:13:00 --> Severity: 8192  --> Function mcrypt_decrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 346
+ERROR - 2021-11-13 06:13:43 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 337
+ERROR - 2021-11-13 06:13:43 --> Severity: 8192  --> Function mcrypt_decrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 346
+ERROR - 2021-11-13 06:13:58 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 337
+ERROR - 2021-11-13 06:13:58 --> Severity: 8192  --> Function mcrypt_decrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 346
+ERROR - 2021-11-13 06:14:42 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 337
+ERROR - 2021-11-13 06:14:42 --> Severity: 8192  --> Function mcrypt_decrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 346
+ERROR - 2021-11-13 06:14:57 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 337
+ERROR - 2021-11-13 06:14:57 --> Severity: 8192  --> Function mcrypt_decrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 346
+ERROR - 2021-11-13 06:15:42 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 337
+ERROR - 2021-11-13 06:15:42 --> Severity: 8192  --> Function mcrypt_decrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 346
+ERROR - 2021-11-13 06:15:57 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 337
+ERROR - 2021-11-13 06:15:57 --> Severity: 8192  --> Function mcrypt_decrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 346
+ERROR - 2021-11-13 06:16:39 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 337
+ERROR - 2021-11-13 06:16:39 --> Severity: 8192  --> Function mcrypt_decrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 346
+ERROR - 2021-11-13 06:16:54 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 337
+ERROR - 2021-11-13 06:16:54 --> Severity: 8192  --> Function mcrypt_decrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 346
+ERROR - 2021-11-13 06:16:54 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 06:16:54 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 06:16:54 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 06:16:55 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 337
+ERROR - 2021-11-13 06:16:55 --> Severity: 8192  --> Function mcrypt_decrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 346
+ERROR - 2021-11-13 06:17:10 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 337
+ERROR - 2021-11-13 06:17:10 --> Severity: 8192  --> Function mcrypt_decrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 346
+ERROR - 2021-11-13 06:17:11 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 337
+ERROR - 2021-11-13 06:17:11 --> Severity: 8192  --> Function mcrypt_decrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 346
+ERROR - 2021-11-13 06:17:26 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 337
+ERROR - 2021-11-13 06:17:26 --> Severity: 8192  --> Function mcrypt_decrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 346
+ERROR - 2021-11-13 06:17:27 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 337
+ERROR - 2021-11-13 06:17:27 --> Severity: 8192  --> Function mcrypt_decrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 346
+ERROR - 2021-11-13 06:17:42 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 337
+ERROR - 2021-11-13 06:17:42 --> Severity: 8192  --> Function mcrypt_decrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 346
+ERROR - 2021-11-13 06:17:42 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 337
+ERROR - 2021-11-13 06:17:42 --> Severity: 8192  --> Function mcrypt_decrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 346
+ERROR - 2021-11-13 06:17:57 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 337
+ERROR - 2021-11-13 06:17:57 --> Severity: 8192  --> Function mcrypt_decrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 346
+ERROR - 2021-11-13 06:17:58 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 337
+ERROR - 2021-11-13 06:17:58 --> Severity: 8192  --> Function mcrypt_decrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 346
+ERROR - 2021-11-13 06:18:13 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 337
+ERROR - 2021-11-13 06:18:13 --> Severity: 8192  --> Function mcrypt_decrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 346
+ERROR - 2021-11-13 06:18:13 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 337
+ERROR - 2021-11-13 06:18:13 --> Severity: 8192  --> Function mcrypt_decrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 346
+ERROR - 2021-11-13 06:18:28 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 337
+ERROR - 2021-11-13 06:18:28 --> Severity: 8192  --> Function mcrypt_decrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 346
+ERROR - 2021-11-13 01:29:33 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 01:29:33 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 01:29:33 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 08:29:46 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 08:29:46 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 08:29:46 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 01:29:46 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 01:29:46 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 01:29:46 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 08:29:46 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 337
+ERROR - 2021-11-13 08:29:46 --> Severity: 8192  --> Function mcrypt_decrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 346
+ERROR - 2021-11-13 01:29:46 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 01:29:46 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 01:29:46 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 08:29:46 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 337
+ERROR - 2021-11-13 08:29:46 --> Severity: 8192  --> Function mcrypt_decrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 346
+ERROR - 2021-11-13 01:29:46 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 01:29:46 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 01:29:46 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 08:30:08 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 337
+ERROR - 2021-11-13 08:30:08 --> Severity: 8192  --> Function mcrypt_decrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 346
+ERROR - 2021-11-13 01:30:08 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 01:30:08 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 01:30:08 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 01:30:08 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 01:30:08 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 01:30:08 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 08:30:08 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 337
+ERROR - 2021-11-13 08:30:08 --> Severity: 8192  --> Function mcrypt_decrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 346
+ERROR - 2021-11-13 01:30:08 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 01:30:08 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 01:30:08 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 01:30:08 --> Could not find the language line "La caja ya se encuentra cerrada el día de hoy. Ya no se puede aperturar hasta el día siguiente."
+ERROR - 2021-11-13 01:30:08 --> Could not find the language line "Cambiar estado del plato a servido."
+ERROR - 2021-11-13 01:30:08 --> Could not find the language line "Si cambiar"
+ERROR - 2021-11-13 08:30:13 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 337
+ERROR - 2021-11-13 08:30:13 --> Severity: 8192  --> Function mcrypt_decrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 346
+ERROR - 2021-11-13 01:30:13 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 01:30:13 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 01:30:13 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 01:30:13 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 01:30:13 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 01:30:13 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 08:30:13 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 337
+ERROR - 2021-11-13 08:30:13 --> Severity: 8192  --> Function mcrypt_decrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 346
+ERROR - 2021-11-13 01:30:13 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 01:30:13 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 01:30:13 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 01:30:13 --> Could not find the language line "Cambiar estado del plato a servido."
+ERROR - 2021-11-13 01:30:13 --> Could not find the language line "Si cambiar"
+ERROR - 2021-11-13 08:30:15 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 337
+ERROR - 2021-11-13 08:30:15 --> Severity: 8192  --> Function mcrypt_decrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 346
+ERROR - 2021-11-13 01:30:15 --> Could not find the language line "Fecha"
+ERROR - 2021-11-13 08:31:05 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 337
+ERROR - 2021-11-13 08:31:05 --> Severity: 8192  --> Function mcrypt_decrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 346
+ERROR - 2021-11-13 01:31:05 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 01:31:05 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 01:31:05 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 08:31:05 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 337
+ERROR - 2021-11-13 08:31:05 --> Severity: 8192  --> Function mcrypt_decrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 346
+ERROR - 2021-11-13 01:31:05 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 01:31:05 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 01:31:05 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 01:31:05 --> Could not find the language line "IMPRIMIR PEDIDO PARA COCINA"
+ERROR - 2021-11-13 01:31:05 --> Could not find the language line "Pedido"
+ERROR - 2021-11-13 01:31:05 --> Could not find the language line "Tipo de Cliente"
+ERROR - 2021-11-13 01:31:05 --> Could not find the language line "NIT"
+ERROR - 2021-11-13 01:31:05 --> Could not find the language line "NIT"
+ERROR - 2021-11-13 01:31:05 --> Could not find the language line "Cambiar estado del plato a servido."
+ERROR - 2021-11-13 01:31:05 --> Could not find the language line "Si cambiar"
+ERROR - 2021-11-13 08:31:06 --> 404 Page Not Found --> files
+ERROR - 2021-11-13 08:31:06 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 337
+ERROR - 2021-11-13 08:31:06 --> Severity: 8192  --> Function mcrypt_decrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 346
+ERROR - 2021-11-13 08:31:06 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 337
+ERROR - 2021-11-13 08:31:06 --> Severity: 8192  --> Function mcrypt_decrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 346
+ERROR - 2021-11-13 08:31:06 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 337
+ERROR - 2021-11-13 08:31:06 --> Severity: 8192  --> Function mcrypt_decrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 346
+ERROR - 2021-11-13 08:31:06 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 337
+ERROR - 2021-11-13 08:31:06 --> Severity: 8192  --> Function mcrypt_decrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 346
+ERROR - 2021-11-13 08:31:06 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 337
+ERROR - 2021-11-13 08:31:06 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 337
+ERROR - 2021-11-13 08:31:06 --> Severity: 8192  --> Function mcrypt_decrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 346
+ERROR - 2021-11-13 08:31:06 --> Severity: 8192  --> Function mcrypt_decrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 346
+ERROR - 2021-11-13 01:31:06 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 405
+ERROR - 2021-11-13 01:31:06 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 425
+ERROR - 2021-11-13 08:31:06 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 337
+ERROR - 2021-11-13 08:31:06 --> Severity: 8192  --> Function mcrypt_decrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 346
+ERROR - 2021-11-13 08:31:06 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 337
+ERROR - 2021-11-13 08:31:06 --> Severity: 8192  --> Function mcrypt_decrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 346
+ERROR - 2021-11-13 08:31:06 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 337
+ERROR - 2021-11-13 08:31:06 --> Severity: 8192  --> Function mcrypt_decrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 346
+ERROR - 2021-11-13 08:31:12 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 337
+ERROR - 2021-11-13 08:31:12 --> Severity: 8192  --> Function mcrypt_decrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 346
+ERROR - 2021-11-13 08:31:18 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 337
+ERROR - 2021-11-13 08:31:18 --> Severity: 8192  --> Function mcrypt_decrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 346
+ERROR - 2021-11-13 08:31:18 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 337
+ERROR - 2021-11-13 08:31:18 --> Severity: 8192  --> Function mcrypt_decrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 346
+ERROR - 2021-11-13 08:31:20 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 337
+ERROR - 2021-11-13 08:31:20 --> Severity: 8192  --> Function mcrypt_decrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 346
+ERROR - 2021-11-13 08:31:20 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 337
+ERROR - 2021-11-13 08:31:20 --> Severity: 8192  --> Function mcrypt_decrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 346
+ERROR - 2021-11-13 08:31:20 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 337
+ERROR - 2021-11-13 08:31:20 --> Severity: 8192  --> Function mcrypt_decrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 346
+ERROR - 2021-11-13 08:31:20 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 337
+ERROR - 2021-11-13 08:31:20 --> Severity: 8192  --> Function mcrypt_decrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 346
+ERROR - 2021-11-13 08:31:20 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 337
+ERROR - 2021-11-13 08:31:20 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 337
+ERROR - 2021-11-13 08:31:20 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 337
+ERROR - 2021-11-13 08:31:20 --> Severity: 8192  --> Function mcrypt_decrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 346
+ERROR - 2021-11-13 08:31:20 --> Severity: 8192  --> Function mcrypt_decrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 346
+ERROR - 2021-11-13 08:31:20 --> Severity: 8192  --> Function mcrypt_decrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 346
+ERROR - 2021-11-13 01:31:20 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 405
+ERROR - 2021-11-13 01:31:20 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 425
+ERROR - 2021-11-13 08:31:20 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 337
+ERROR - 2021-11-13 08:31:20 --> Severity: 8192  --> Function mcrypt_decrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 346
+ERROR - 2021-11-13 08:31:22 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 337
+ERROR - 2021-11-13 08:31:22 --> Severity: 8192  --> Function mcrypt_decrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 346
+ERROR - 2021-11-13 01:31:22 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 01:31:22 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 01:31:22 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 08:31:22 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 337
+ERROR - 2021-11-13 08:31:22 --> Severity: 8192  --> Function mcrypt_decrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 346
+ERROR - 2021-11-13 01:31:22 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 01:31:22 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 01:31:22 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 01:31:22 --> Could not find the language line "Cambiar estado del plato a servido."
+ERROR - 2021-11-13 01:31:22 --> Could not find the language line "Si cambiar"
+ERROR - 2021-11-13 08:31:29 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 337
+ERROR - 2021-11-13 08:31:29 --> Severity: 8192  --> Function mcrypt_decrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 346
+ERROR - 2021-11-13 01:31:29 --> Could not find the language line "Fecha"
+ERROR - 2021-11-13 08:31:49 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 337
+ERROR - 2021-11-13 08:31:49 --> Severity: 8192  --> Function mcrypt_decrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 346
+ERROR - 2021-11-13 01:31:49 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 01:31:49 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 01:31:49 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 08:31:49 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 337
+ERROR - 2021-11-13 08:31:49 --> Severity: 8192  --> Function mcrypt_decrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 346
+ERROR - 2021-11-13 01:31:49 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 01:31:49 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 01:31:49 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 01:31:49 --> Could not find the language line "La caja ya se encuentra cerrada el día de hoy. Ya no se puede aperturar hasta el día siguiente."
+ERROR - 2021-11-13 01:31:49 --> Could not find the language line "Cambiar estado del plato a servido."
+ERROR - 2021-11-13 01:31:49 --> Could not find the language line "Si cambiar"
+ERROR - 2021-11-13 08:31:51 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 337
+ERROR - 2021-11-13 08:31:51 --> Severity: 8192  --> Function mcrypt_decrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 346
+ERROR - 2021-11-13 21:22:31 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 21:22:31 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 21:22:31 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 21:22:32 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 21:22:32 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 21:22:32 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 21:22:37 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 21:22:37 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 21:22:37 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 21:22:37 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 21:22:37 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 21:22:37 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 21:22:38 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 21:22:38 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 21:22:38 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 21:22:38 --> Could not find the language line "La caja ya se encuentra cerrada el día de hoy. Ya no se puede aperturar hasta el día siguiente."
+ERROR - 2021-11-13 21:22:38 --> Could not find the language line "Cambiar estado del plato a servido."
+ERROR - 2021-11-13 21:22:38 --> Could not find the language line "Si cambiar"
+ERROR - 2021-11-13 21:23:20 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 21:23:20 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 21:23:20 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 21:23:20 --> Could not find the language line "La caja ya se encuentra cerrada el día de hoy. Ya no se puede aperturar hasta el día siguiente."
+ERROR - 2021-11-13 21:23:20 --> Could not find the language line "Cambiar estado del plato a servido."
+ERROR - 2021-11-13 21:23:20 --> Could not find the language line "Si cambiar"
+ERROR - 2021-11-13 21:23:57 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 21:23:57 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 21:23:57 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 21:23:57 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 21:23:57 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 21:23:57 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 21:23:57 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 21:23:57 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 21:23:57 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 21:23:57 --> Could not find the language line "Cambiar estado del plato a servido."
+ERROR - 2021-11-13 21:23:57 --> Could not find the language line "Si cambiar"
+ERROR - 2021-11-13 21:23:57 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 21:23:57 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 21:23:57 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 21:23:57 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 21:23:57 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 21:23:57 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 21:23:57 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 21:23:57 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 21:23:57 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 21:23:58 --> Could not find the language line "Cambiar estado del plato a servido."
+ERROR - 2021-11-13 21:23:58 --> Could not find the language line "Si cambiar"
+ERROR - 2021-11-13 21:24:00 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 21:24:00 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 21:24:00 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 21:24:00 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 21:24:00 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 21:24:00 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 21:24:00 --> Could not find the language line "IMPRIMIR PEDIDO PARA COCINA"
+ERROR - 2021-11-13 21:24:00 --> Could not find the language line "Pedido"
+ERROR - 2021-11-13 21:24:00 --> Could not find the language line "Tipo de Cliente"
+ERROR - 2021-11-13 21:24:00 --> Could not find the language line "NIT"
+ERROR - 2021-11-13 21:24:00 --> Could not find the language line "NIT"
+ERROR - 2021-11-13 21:24:00 --> Could not find the language line "Cambiar estado del plato a servido."
+ERROR - 2021-11-13 21:24:00 --> Could not find the language line "Si cambiar"
+ERROR - 2021-11-13 21:24:00 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 425
+ERROR - 2021-11-13 21:24:00 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 405
+ERROR - 2021-11-13 21:24:03 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 425
+ERROR - 2021-11-13 21:24:03 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 405
+ERROR - 2021-11-13 21:24:04 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 405
+ERROR - 2021-11-13 21:24:04 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 425
+ERROR - 2021-11-13 21:24:06 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 425
+ERROR - 2021-11-13 21:24:06 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 405
+ERROR - 2021-11-13 21:24:07 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 405
+ERROR - 2021-11-13 21:24:07 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 425
+ERROR - 2021-11-13 21:24:12 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 405
+ERROR - 2021-11-13 21:24:12 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 425
+ERROR - 2021-11-13 21:24:14 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 21:24:14 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 21:24:14 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 21:24:14 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 21:24:14 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 21:24:14 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 21:24:14 --> Could not find the language line "Cambiar estado del plato a servido."
+ERROR - 2021-11-13 21:24:14 --> Could not find the language line "Si cambiar"
+ERROR - 2021-11-13 21:56:20 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 21:56:20 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 21:56:20 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 21:56:21 --> Could not find the language line "Imprimir Menú"
+ERROR - 2021-11-13 21:56:21 --> Could not find the language line "Generar Códigos de Barras"
+ERROR - 2021-11-13 21:56:25 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 21:56:25 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 21:56:25 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 21:56:36 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 21:56:36 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 21:56:36 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 21:56:37 --> You did not select a file to upload.
+ERROR - 2021-11-13 21:56:37 --> Severity: Warning  --> array_key_exists() expects parameter 2 to be array, null given E:\xampp\htdocs\puntorestaurantv3\traits\uniquecheck.php 54
+ERROR - 2021-11-13 21:56:37 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 21:56:37 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 21:56:37 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 21:56:37 --> Could not find the language line "Imprimir Menú"
+ERROR - 2021-11-13 21:56:37 --> Could not find the language line "Generar Códigos de Barras"
+ERROR - 2021-11-13 21:56:40 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 21:56:40 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 21:56:40 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 21:56:40 --> Could not find the language line "Cambiar estado del plato a servido."
+ERROR - 2021-11-13 21:56:40 --> Could not find the language line "Si cambiar"
+ERROR - 2021-11-13 21:56:41 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 21:56:41 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 21:56:41 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 21:56:41 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 21:56:41 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 21:56:41 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 21:56:41 --> Could not find the language line "IMPRIMIR PEDIDO PARA COCINA"
+ERROR - 2021-11-13 21:56:41 --> Could not find the language line "Pedido"
+ERROR - 2021-11-13 21:56:41 --> Could not find the language line "Tipo de Cliente"
+ERROR - 2021-11-13 21:56:41 --> Could not find the language line "NIT"
+ERROR - 2021-11-13 21:56:41 --> Could not find the language line "NIT"
+ERROR - 2021-11-13 21:56:41 --> Could not find the language line "Cambiar estado del plato a servido."
+ERROR - 2021-11-13 21:56:41 --> Could not find the language line "Si cambiar"
+ERROR - 2021-11-13 21:56:42 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 405
+ERROR - 2021-11-13 21:56:42 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 425
+ERROR - 2021-11-13 21:59:44 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 21:59:44 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 21:59:44 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 21:59:44 --> Could not find the language line "Imprimir Menú"
+ERROR - 2021-11-13 21:59:44 --> Could not find the language line "Generar Códigos de Barras"
+ERROR - 2021-11-13 21:59:48 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 21:59:48 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 21:59:48 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 21:59:55 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 21:59:55 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 21:59:55 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 21:59:55 --> You did not select a file to upload.
+ERROR - 2021-11-13 21:59:55 --> Severity: Warning  --> array_key_exists() expects parameter 2 to be array, null given E:\xampp\htdocs\puntorestaurantv3\traits\uniquecheck.php 54
+ERROR - 2021-11-13 21:59:55 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 21:59:55 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 21:59:55 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 21:59:55 --> Could not find the language line "Imprimir Menú"
+ERROR - 2021-11-13 21:59:55 --> Could not find the language line "Generar Códigos de Barras"
+ERROR - 2021-11-13 21:59:58 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 21:59:58 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 21:59:58 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 21:59:58 --> Could not find the language line "IMPRIMIR PEDIDO PARA COCINA"
+ERROR - 2021-11-13 21:59:58 --> Could not find the language line "Pedido"
+ERROR - 2021-11-13 21:59:58 --> Could not find the language line "Tipo de Cliente"
+ERROR - 2021-11-13 21:59:58 --> Could not find the language line "NIT"
+ERROR - 2021-11-13 21:59:58 --> Could not find the language line "NIT"
+ERROR - 2021-11-13 21:59:58 --> Could not find the language line "Cambiar estado del plato a servido."
+ERROR - 2021-11-13 21:59:58 --> Could not find the language line "Si cambiar"
+ERROR - 2021-11-13 21:59:58 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 425
+ERROR - 2021-11-13 21:59:58 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 405
+ERROR - 2021-11-13 22:00:01 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 22:00:01 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 22:00:01 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 22:00:01 --> Could not find the language line "IMPRIMIR PEDIDO PARA COCINA"
+ERROR - 2021-11-13 22:00:01 --> Could not find the language line "Pedido"
+ERROR - 2021-11-13 22:00:01 --> Could not find the language line "Tipo de Cliente"
+ERROR - 2021-11-13 22:00:01 --> Could not find the language line "NIT"
+ERROR - 2021-11-13 22:00:01 --> Could not find the language line "NIT"
+ERROR - 2021-11-13 22:00:01 --> Could not find the language line "Cambiar estado del plato a servido."
+ERROR - 2021-11-13 22:00:01 --> Could not find the language line "Si cambiar"
+ERROR - 2021-11-13 22:00:01 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 405
+ERROR - 2021-11-13 22:00:01 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 425
+ERROR - 2021-11-13 22:01:39 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 22:01:39 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 22:01:39 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 22:01:47 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 22:01:47 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 22:01:47 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 22:01:47 --> You did not select a file to upload.
+ERROR - 2021-11-13 22:01:57 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 22:01:57 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 22:01:57 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 22:01:57 --> Could not find the language line "IMPRIMIR PEDIDO PARA COCINA"
+ERROR - 2021-11-13 22:01:57 --> Could not find the language line "Pedido"
+ERROR - 2021-11-13 22:01:57 --> Could not find the language line "Tipo de Cliente"
+ERROR - 2021-11-13 22:01:57 --> Could not find the language line "NIT"
+ERROR - 2021-11-13 22:01:57 --> Could not find the language line "NIT"
+ERROR - 2021-11-13 22:01:57 --> Could not find the language line "Cambiar estado del plato a servido."
+ERROR - 2021-11-13 22:01:57 --> Could not find the language line "Si cambiar"
+ERROR - 2021-11-13 22:01:57 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 425
+ERROR - 2021-11-13 22:01:57 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 405
+ERROR - 2021-11-13 22:04:30 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 22:04:30 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 22:04:30 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 22:04:30 --> Could not find the language line "Imprimir Menú"
+ERROR - 2021-11-13 22:04:30 --> Could not find the language line "Generar Códigos de Barras"
+ERROR - 2021-11-13 22:04:35 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 22:04:36 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 22:04:36 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 22:04:43 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 22:04:43 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 22:04:43 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 22:04:43 --> You did not select a file to upload.
+ERROR - 2021-11-13 22:05:11 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 22:05:11 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 22:05:11 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 22:05:13 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 22:05:13 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 22:05:13 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 22:05:14 --> You did not select a file to upload.
+ERROR - 2021-11-13 22:05:14 --> Severity: Warning  --> array_key_exists() expects parameter 2 to be array, null given E:\xampp\htdocs\puntorestaurantv3\traits\uniquecheck.php 54
+ERROR - 2021-11-13 22:05:14 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 22:05:14 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 22:05:14 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 22:05:14 --> Could not find the language line "Imprimir Menú"
+ERROR - 2021-11-13 22:05:14 --> Could not find the language line "Generar Códigos de Barras"
+ERROR - 2021-11-13 22:05:18 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 22:05:18 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 22:05:18 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 22:05:18 --> Could not find the language line "IMPRIMIR PEDIDO PARA COCINA"
+ERROR - 2021-11-13 22:05:18 --> Could not find the language line "Pedido"
+ERROR - 2021-11-13 22:05:18 --> Could not find the language line "Tipo de Cliente"
+ERROR - 2021-11-13 22:05:18 --> Could not find the language line "NIT"
+ERROR - 2021-11-13 22:05:18 --> Could not find the language line "NIT"
+ERROR - 2021-11-13 22:05:18 --> Could not find the language line "Cambiar estado del plato a servido."
+ERROR - 2021-11-13 22:05:18 --> Could not find the language line "Si cambiar"
+ERROR - 2021-11-13 22:05:18 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 425
+ERROR - 2021-11-13 22:05:18 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 405
+ERROR - 2021-11-13 22:05:39 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 22:05:39 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 22:05:39 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 22:05:39 --> Could not find the language line "Imprimir Menú"
+ERROR - 2021-11-13 22:05:39 --> Could not find the language line "Generar Códigos de Barras"
+ERROR - 2021-11-13 22:05:42 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 22:05:42 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 22:05:42 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 22:05:46 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 22:05:46 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 22:05:46 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 22:05:46 --> You did not select a file to upload.
+ERROR - 2021-11-13 22:05:46 --> Severity: Warning  --> array_key_exists() expects parameter 2 to be array, null given E:\xampp\htdocs\puntorestaurantv3\traits\uniquecheck.php 54
+ERROR - 2021-11-13 22:05:46 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 22:05:46 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 22:05:46 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 22:05:46 --> Could not find the language line "Imprimir Menú"
+ERROR - 2021-11-13 22:05:46 --> Could not find the language line "Generar Códigos de Barras"
+ERROR - 2021-11-13 22:05:49 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 22:05:49 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 22:05:49 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 22:05:49 --> Could not find the language line "IMPRIMIR PEDIDO PARA COCINA"
+ERROR - 2021-11-13 22:05:49 --> Could not find the language line "Pedido"
+ERROR - 2021-11-13 22:05:49 --> Could not find the language line "Tipo de Cliente"
+ERROR - 2021-11-13 22:05:49 --> Could not find the language line "NIT"
+ERROR - 2021-11-13 22:05:49 --> Could not find the language line "NIT"
+ERROR - 2021-11-13 22:05:49 --> Could not find the language line "Cambiar estado del plato a servido."
+ERROR - 2021-11-13 22:05:49 --> Could not find the language line "Si cambiar"
+ERROR - 2021-11-13 22:05:49 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 405
+ERROR - 2021-11-13 22:05:49 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 425
+ERROR - 2021-11-13 22:08:40 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 22:08:40 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 22:08:40 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 22:08:40 --> Could not find the language line "IMPRIMIR PEDIDO PARA COCINA"
+ERROR - 2021-11-13 22:08:40 --> Could not find the language line "Pedido"
+ERROR - 2021-11-13 22:08:40 --> Could not find the language line "Tipo de Cliente"
+ERROR - 2021-11-13 22:08:40 --> Could not find the language line "NIT"
+ERROR - 2021-11-13 22:08:40 --> Could not find the language line "NIT"
+ERROR - 2021-11-13 22:08:40 --> Could not find the language line "Cambiar estado del plato a servido."
+ERROR - 2021-11-13 22:08:40 --> Could not find the language line "Si cambiar"
+ERROR - 2021-11-13 22:08:40 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 425
+ERROR - 2021-11-13 22:08:40 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 405
+ERROR - 2021-11-13 22:08:47 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 22:08:47 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 22:08:47 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 22:08:47 --> Could not find the language line "Imprimir Menú"
+ERROR - 2021-11-13 22:08:47 --> Could not find the language line "Generar Códigos de Barras"
+ERROR - 2021-11-13 22:08:50 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 22:08:50 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 22:08:50 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 22:08:55 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 22:08:55 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 22:08:55 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 22:08:55 --> You did not select a file to upload.
+ERROR - 2021-11-13 22:08:55 --> Severity: Warning  --> array_key_exists() expects parameter 2 to be array, null given E:\xampp\htdocs\puntorestaurantv3\traits\uniquecheck.php 54
+ERROR - 2021-11-13 22:08:55 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 22:08:55 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 22:08:55 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 22:08:55 --> Could not find the language line "Imprimir Menú"
+ERROR - 2021-11-13 22:08:55 --> Could not find the language line "Generar Códigos de Barras"
+ERROR - 2021-11-13 22:08:59 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 22:08:59 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 22:08:59 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 22:08:59 --> Could not find the language line "IMPRIMIR PEDIDO PARA COCINA"
+ERROR - 2021-11-13 22:08:59 --> Could not find the language line "Pedido"
+ERROR - 2021-11-13 22:08:59 --> Could not find the language line "Tipo de Cliente"
+ERROR - 2021-11-13 22:08:59 --> Could not find the language line "NIT"
+ERROR - 2021-11-13 22:08:59 --> Could not find the language line "NIT"
+ERROR - 2021-11-13 22:08:59 --> Could not find the language line "Cambiar estado del plato a servido."
+ERROR - 2021-11-13 22:08:59 --> Could not find the language line "Si cambiar"
+ERROR - 2021-11-13 22:08:59 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 425
+ERROR - 2021-11-13 22:08:59 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 405
+ERROR - 2021-11-13 22:09:08 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 22:09:08 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 22:09:08 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 22:09:08 --> Could not find the language line "Imprimir Menú"
+ERROR - 2021-11-13 22:09:08 --> Could not find the language line "Generar Códigos de Barras"
+ERROR - 2021-11-13 22:09:10 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 22:09:10 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 22:09:10 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 22:09:20 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 22:09:20 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 22:09:20 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 22:09:20 --> You did not select a file to upload.
+ERROR - 2021-11-13 22:09:20 --> Severity: Warning  --> array_key_exists() expects parameter 2 to be array, null given E:\xampp\htdocs\puntorestaurantv3\traits\uniquecheck.php 54
+ERROR - 2021-11-13 22:09:20 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 22:09:20 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 22:09:20 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 22:09:20 --> Could not find the language line "Imprimir Menú"
+ERROR - 2021-11-13 22:09:20 --> Could not find the language line "Generar Códigos de Barras"
+ERROR - 2021-11-13 22:09:24 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 22:09:24 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 22:09:24 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 22:09:24 --> Could not find the language line "IMPRIMIR PEDIDO PARA COCINA"
+ERROR - 2021-11-13 22:09:24 --> Could not find the language line "Pedido"
+ERROR - 2021-11-13 22:09:24 --> Could not find the language line "Tipo de Cliente"
+ERROR - 2021-11-13 22:09:24 --> Could not find the language line "NIT"
+ERROR - 2021-11-13 22:09:24 --> Could not find the language line "NIT"
+ERROR - 2021-11-13 22:09:24 --> Could not find the language line "Cambiar estado del plato a servido."
+ERROR - 2021-11-13 22:09:24 --> Could not find the language line "Si cambiar"
+ERROR - 2021-11-13 22:09:25 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 405
+ERROR - 2021-11-13 22:09:25 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 425
+ERROR - 2021-11-13 22:09:31 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 22:09:31 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 22:09:31 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 22:09:31 --> Could not find the language line "Imprimir Menú"
+ERROR - 2021-11-13 22:09:31 --> Could not find the language line "Generar Códigos de Barras"
+ERROR - 2021-11-13 22:09:33 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 22:09:33 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 22:09:33 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 22:09:39 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 22:09:39 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 22:09:39 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 22:09:39 --> You did not select a file to upload.
+ERROR - 2021-11-13 22:09:39 --> Severity: Warning  --> array_key_exists() expects parameter 2 to be array, null given E:\xampp\htdocs\puntorestaurantv3\traits\uniquecheck.php 54
+ERROR - 2021-11-13 22:09:39 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 22:09:39 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 22:09:39 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 22:09:39 --> Could not find the language line "Imprimir Menú"
+ERROR - 2021-11-13 22:09:39 --> Could not find the language line "Generar Códigos de Barras"
+ERROR - 2021-11-13 22:09:42 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 22:09:42 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 22:09:42 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 22:09:42 --> Could not find the language line "IMPRIMIR PEDIDO PARA COCINA"
+ERROR - 2021-11-13 22:09:42 --> Could not find the language line "Pedido"
+ERROR - 2021-11-13 22:09:42 --> Could not find the language line "Tipo de Cliente"
+ERROR - 2021-11-13 22:09:42 --> Could not find the language line "NIT"
+ERROR - 2021-11-13 22:09:42 --> Could not find the language line "NIT"
+ERROR - 2021-11-13 22:09:42 --> Could not find the language line "Cambiar estado del plato a servido."
+ERROR - 2021-11-13 22:09:42 --> Could not find the language line "Si cambiar"
+ERROR - 2021-11-13 22:09:42 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 425
+ERROR - 2021-11-13 22:09:42 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 405
+ERROR - 2021-11-13 22:10:00 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 22:10:00 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 22:10:00 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 22:10:00 --> Could not find the language line "Imprimir Menú"
+ERROR - 2021-11-13 22:10:00 --> Could not find the language line "Generar Códigos de Barras"
+ERROR - 2021-11-13 22:10:10 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 22:10:10 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 22:10:10 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 22:10:10 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 22:10:10 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 22:10:10 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 22:10:10 --> Could not find the language line "Imprimir Menú"
+ERROR - 2021-11-13 22:10:10 --> Could not find the language line "Generar Códigos de Barras"
+ERROR - 2021-11-13 22:10:13 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 22:10:13 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 22:10:13 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 22:10:13 --> Could not find the language line "IMPRIMIR PEDIDO PARA COCINA"
+ERROR - 2021-11-13 22:10:13 --> Could not find the language line "Pedido"
+ERROR - 2021-11-13 22:10:13 --> Could not find the language line "Tipo de Cliente"
+ERROR - 2021-11-13 22:10:13 --> Could not find the language line "NIT"
+ERROR - 2021-11-13 22:10:13 --> Could not find the language line "NIT"
+ERROR - 2021-11-13 22:10:13 --> Could not find the language line "Cambiar estado del plato a servido."
+ERROR - 2021-11-13 22:10:13 --> Could not find the language line "Si cambiar"
+ERROR - 2021-11-13 22:10:13 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 405
+ERROR - 2021-11-13 22:10:13 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 425
+ERROR - 2021-11-13 22:10:25 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 22:10:25 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 22:10:25 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 22:10:25 --> Could not find the language line "Imprimir Menú"
+ERROR - 2021-11-13 22:10:25 --> Could not find the language line "Generar Códigos de Barras"
+ERROR - 2021-11-13 22:10:36 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 22:10:36 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 22:10:36 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 22:10:36 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 22:10:36 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 22:10:36 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 22:10:36 --> Could not find the language line "Imprimir Menú"
+ERROR - 2021-11-13 22:10:36 --> Could not find the language line "Generar Códigos de Barras"
+ERROR - 2021-11-13 22:13:31 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 22:13:31 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 22:13:31 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 22:21:36 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 22:21:36 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 22:21:36 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 22:21:36 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 22:21:36 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 22:21:36 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 22:21:36 --> Could not find the language line "Imprimir Menú"
+ERROR - 2021-11-13 22:21:36 --> Could not find the language line "Generar Códigos de Barras"
+ERROR - 2021-11-13 22:21:43 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 22:21:43 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 22:21:43 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 22:21:43 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 22:21:43 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 22:21:43 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 22:21:43 --> Could not find the language line "Imprimir Menú"
+ERROR - 2021-11-13 22:21:43 --> Could not find the language line "Generar Códigos de Barras"
+ERROR - 2021-11-13 22:21:54 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 22:21:54 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 22:21:54 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 22:21:54 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 22:21:54 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 22:21:54 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 22:21:54 --> Could not find the language line "Imprimir Menú"
+ERROR - 2021-11-13 22:21:54 --> Could not find the language line "Generar Códigos de Barras"
+ERROR - 2021-11-13 22:21:57 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 22:21:57 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 22:21:57 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 22:21:57 --> Could not find the language line "IMPRIMIR PEDIDO PARA COCINA"
+ERROR - 2021-11-13 22:21:57 --> Could not find the language line "Pedido"
+ERROR - 2021-11-13 22:21:57 --> Could not find the language line "Tipo de Cliente"
+ERROR - 2021-11-13 22:21:57 --> Could not find the language line "NIT"
+ERROR - 2021-11-13 22:21:57 --> Could not find the language line "NIT"
+ERROR - 2021-11-13 22:21:57 --> Could not find the language line "Cambiar estado del plato a servido."
+ERROR - 2021-11-13 22:21:57 --> Could not find the language line "Si cambiar"
+ERROR - 2021-11-13 22:21:58 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 405
+ERROR - 2021-11-13 22:21:58 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 425
+ERROR - 2021-11-13 22:22:02 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 22:22:02 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 22:22:02 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 22:22:02 --> Could not find the language line "Imprimir Menú"
+ERROR - 2021-11-13 22:22:02 --> Could not find the language line "Generar Códigos de Barras"
+ERROR - 2021-11-13 22:22:05 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 22:22:05 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 22:22:05 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 22:22:05 --> Could not find the language line "IMPRIMIR PEDIDO PARA COCINA"
+ERROR - 2021-11-13 22:22:05 --> Could not find the language line "Pedido"
+ERROR - 2021-11-13 22:22:05 --> Could not find the language line "Tipo de Cliente"
+ERROR - 2021-11-13 22:22:05 --> Could not find the language line "NIT"
+ERROR - 2021-11-13 22:22:05 --> Could not find the language line "NIT"
+ERROR - 2021-11-13 22:22:05 --> Could not find the language line "Cambiar estado del plato a servido."
+ERROR - 2021-11-13 22:22:05 --> Could not find the language line "Si cambiar"
+ERROR - 2021-11-13 22:22:05 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 405
+ERROR - 2021-11-13 22:22:05 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 425
+ERROR - 2021-11-13 22:22:07 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 22:22:07 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 22:22:07 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 22:22:07 --> Could not find the language line "Imprimir Menú"
+ERROR - 2021-11-13 22:22:07 --> Could not find the language line "Generar Códigos de Barras"
+ERROR - 2021-11-13 22:22:10 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 22:22:10 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 22:22:10 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 22:22:12 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 22:22:12 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 22:22:12 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 22:22:12 --> You did not select a file to upload.
+ERROR - 2021-11-13 22:22:12 --> Severity: Warning  --> array_key_exists() expects parameter 2 to be array, null given E:\xampp\htdocs\puntorestaurantv3\traits\uniquecheck.php 54
+ERROR - 2021-11-13 22:22:12 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 22:22:12 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 22:22:12 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 22:22:12 --> Could not find the language line "Imprimir Menú"
+ERROR - 2021-11-13 22:22:12 --> Could not find the language line "Generar Códigos de Barras"
+ERROR - 2021-11-13 22:22:15 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 22:22:15 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 22:22:15 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 22:22:15 --> Could not find the language line "IMPRIMIR PEDIDO PARA COCINA"
+ERROR - 2021-11-13 22:22:15 --> Could not find the language line "Pedido"
+ERROR - 2021-11-13 22:22:15 --> Could not find the language line "Tipo de Cliente"
+ERROR - 2021-11-13 22:22:15 --> Could not find the language line "NIT"
+ERROR - 2021-11-13 22:22:15 --> Could not find the language line "NIT"
+ERROR - 2021-11-13 22:22:15 --> Could not find the language line "Cambiar estado del plato a servido."
+ERROR - 2021-11-13 22:22:15 --> Could not find the language line "Si cambiar"
+ERROR - 2021-11-13 22:22:15 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 425
+ERROR - 2021-11-13 22:22:15 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 405
+ERROR - 2021-11-13 22:22:18 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 22:22:18 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 22:22:18 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 22:22:18 --> Could not find the language line "Imprimir Menú"
+ERROR - 2021-11-13 22:22:18 --> Could not find the language line "Generar Códigos de Barras"
+ERROR - 2021-11-13 22:22:21 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 22:22:21 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 22:22:21 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 22:22:30 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 22:22:30 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 22:22:30 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 22:22:30 --> You did not select a file to upload.
+ERROR - 2021-11-13 22:22:30 --> Severity: Warning  --> array_key_exists() expects parameter 2 to be array, null given E:\xampp\htdocs\puntorestaurantv3\traits\uniquecheck.php 54
+ERROR - 2021-11-13 22:22:30 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 22:22:30 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 22:22:30 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 22:22:30 --> Could not find the language line "Imprimir Menú"
+ERROR - 2021-11-13 22:22:30 --> Could not find the language line "Generar Códigos de Barras"
+ERROR - 2021-11-13 22:22:32 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 22:22:32 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 22:22:32 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 22:22:32 --> Could not find the language line "IMPRIMIR PEDIDO PARA COCINA"
+ERROR - 2021-11-13 22:22:32 --> Could not find the language line "Pedido"
+ERROR - 2021-11-13 22:22:32 --> Could not find the language line "Tipo de Cliente"
+ERROR - 2021-11-13 22:22:32 --> Could not find the language line "NIT"
+ERROR - 2021-11-13 22:22:32 --> Could not find the language line "NIT"
+ERROR - 2021-11-13 22:22:32 --> Could not find the language line "Cambiar estado del plato a servido."
+ERROR - 2021-11-13 22:22:32 --> Could not find the language line "Si cambiar"
+ERROR - 2021-11-13 22:22:33 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 405
+ERROR - 2021-11-13 22:22:33 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 425
+ERROR - 2021-11-13 22:22:36 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 22:22:36 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 22:22:36 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 22:22:36 --> Could not find the language line "Imprimir Menú"
+ERROR - 2021-11-13 22:22:36 --> Could not find the language line "Generar Códigos de Barras"
+ERROR - 2021-11-13 22:22:41 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 22:22:41 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 22:22:41 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 22:22:46 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 22:22:46 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 22:22:46 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 22:22:46 --> You did not select a file to upload.
+ERROR - 2021-11-13 22:22:46 --> Severity: Warning  --> array_key_exists() expects parameter 2 to be array, null given E:\xampp\htdocs\puntorestaurantv3\traits\uniquecheck.php 54
+ERROR - 2021-11-13 22:22:46 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 22:22:46 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 22:22:46 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 22:22:46 --> Could not find the language line "Imprimir Menú"
+ERROR - 2021-11-13 22:22:46 --> Could not find the language line "Generar Códigos de Barras"
+ERROR - 2021-11-13 22:22:53 --> Severity: 8192  --> Function mcrypt_get_iv_size() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 319
+ERROR - 2021-11-13 22:22:53 --> Severity: 8192  --> Function mcrypt_create_iv() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 320
+ERROR - 2021-11-13 22:22:53 --> Severity: 8192  --> Function mcrypt_encrypt() is deprecated E:\xampp\htdocs\puntorestaurantv3\system\libraries\Encrypt.php 321
+ERROR - 2021-11-13 22:22:53 --> Could not find the language line "IMPRIMIR PEDIDO PARA COCINA"
+ERROR - 2021-11-13 22:22:53 --> Could not find the language line "Pedido"
+ERROR - 2021-11-13 22:22:53 --> Could not find the language line "Tipo de Cliente"
+ERROR - 2021-11-13 22:22:53 --> Could not find the language line "NIT"
+ERROR - 2021-11-13 22:22:53 --> Could not find the language line "NIT"
+ERROR - 2021-11-13 22:22:53 --> Could not find the language line "Cambiar estado del plato a servido."
+ERROR - 2021-11-13 22:22:53 --> Could not find the language line "Si cambiar"
+ERROR - 2021-11-13 22:22:53 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 405
+ERROR - 2021-11-13 22:22:53 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 425

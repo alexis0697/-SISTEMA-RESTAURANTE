@@ -283,10 +283,17 @@ class Products extends MY_Controller
 
     function updatestock()
     {
+       
         $quant = $this->input->post('quant');
         $quantw = $this->input->post('quantw');
         $pricest = $this->input->post('pricest');
         $productID = $this->input->post('productID');
+        $product = Sale_item::find('all', array(
+            'conditions' => array(
+                'product_id = ?',
+                $productID
+            )
+        ));
         if ($quant) {
             foreach ($quant as $qt) {
                 if ($item = Stock::find('first', array('conditions' => array('store_id = ? AND product_id = ?', $qt['store_id'], $productID)))) {
@@ -301,7 +308,7 @@ class Products extends MY_Controller
         if ($pricest) {
             foreach ($pricest as $pr) {
                 if ($item = Stock::find('first', array('conditions' => array('store_id = ? AND product_id = ?', $pr['store_id'], $productID)))) {
-                    $item->price = $pr['price'];
+                    $item->price = $product->price;
                     $item->save();
                 } else {
                     $pr['product_id'] = $productID;

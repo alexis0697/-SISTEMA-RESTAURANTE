@@ -155,22 +155,15 @@ class Productcontroller extends CI_Controller
       $warehouses = Warehouse::find('all');
       $stores = Store::find('all');
 
-      $content = '<div class="col-md-12"><table class="table table-striped"><thead><tr><th width="40%">'.label("Store").'</th><th width="30%">'.label("Quantity").'</th><th width="30%">'.label("price").'</th></tr></thead><tbody class="itemslist">';
+      $content = '<div class="col-md-12"><table class="table table-striped"><thead><tr><th width="40%">'.label("Store").'</th><th width="30%">'.label("Quantity").'</th></tr></thead><tbody class="itemslist">';
            foreach ($stores as $store) {
              $stock = Stock::find('first', array('conditions' => array('store_id = ? AND product_id = ?', $store->id, $id)));
              $quantity = $stock ? $stock->quantity : '0';
              $price = $stock ? ($stock->price ? $stock->price : '0') : '0';
-               $content .= '<tr><td>'.$store->name.'</td><td><input type="number" id="quantity" store-id="'.$store->id.'" value="'.$quantity.'"></td><td><input type="number" id="pricestr" store-id="'.$store->id.'" value="'.$price.'"></td></tr>';
+               $content .= '<tr><td>'.$store->name.'</td><td><input type="number" id="quantity" store-id="'.$store->id.'" value="'.$quantity.'"></td></tr>';
            }
         $content .= '  </tbody>
        </table></div>';
-
-      $content .= '<div class="col-md-12"><table class="table table-striped"><thead><tr><th width="40%">'.label("Warehouses").'</th><th width="30%">'.label("Quantity").'</th><th width="30%">'.label("price").'</th></tr></thead><tbody class="itemslist">';
-            foreach ($warehouses as $warehouse) {
-               $stock = Stock::find('first', array('conditions' => array('warehouse_id = ? AND product_id = ?', $warehouse->id, $id)));
-               $quantity = $stock ? $stock->quantity : '0';
-                $content .= '<tr><td>'.$warehouse->name.'</td><td><input type="number" id="quantityw" warehouse-id="'.$warehouse->id.'" value="'.$quantity.'"></td><td><input type="number" id="pricew" value="" disabled="true"></td></tr>';
-            }
          $content .= '  </tbody>
         </table></div>';
         $content .= '<input type="hidden" id="prodctID" value="'.$id.'">';
