@@ -90,7 +90,6 @@ function cambiarEstadoPlato(select, id) {
                 <a class="btn btn-lg kitchentableList-btn enabled" href="javascript:void(0)"
                     onclick="showticket(<?= $table->id; ?>)">
                     <?= $table->name; ?>
-                    <!--<img src="<?= base_url() ?>assets/img/cooking.png" alt="<?= $table->name; ?>">-->
                     <div id="showOrderTableContainer<?= $table->id; ?>" style="max-width: 5%;">
                     </div>
                 </a>
@@ -144,6 +143,5 @@ function cambiarEstadoPlato(select, id) {
 for (let i = 0; i < tablesIdHasOrders.length; i++) {
    const element = tablesIdHasOrders[i];
    showOrderTable(element);
-   
 }
 </script>

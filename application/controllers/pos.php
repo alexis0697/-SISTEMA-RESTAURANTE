@@ -1154,7 +1154,17 @@ class Pos extends CI_Controller
                         $cash += $paystatus > 0 ? $sale->total : $sale->firstpayement;
                 }
             }
-            $data = '<div class="col-md-3"><blockquote><footer>' . label("Openedby") . '</footer><p>' . $createdBy . '</p></blockquote></div><div class="col-md-3"><blockquote><footer>' . label("CashinHand") . '</footer><p>' . $this->setting->currency . ' ' . number_format((float)$CashinHand, $this->setting->decimals, '.', '') . '</p></blockquote></div><div class="col-md-4"><blockquote><footer>' . label("Fecha") . '</footer><p>' . date('Y-m-d h:i:s') . '</p></blockquote></div><div class="col-md-2"><img src="' . site_url() . '/assets/img/register.svg" alt=""></div><h2>' . label("PaymentsSummary") . '</h2><div class="table-responsive"><table class="table table-striped"><tr><th width="25%">' . label("PayementType") . '</th><th width="25%">' . label("EXPECTED") . ' (' . $this->setting->currency . ')</th><th width="25%">' . label("COUNTED") . ' (' . $this->setting->currency . ')</th><th width="25%">' . label("DIFFERENCES") . ' (' . $this->setting->currency . ')</th></tr><tr><td>' . label("Cash") . '</td><td><span id="expectedcash">' . number_format((float)$cash, $this->setting->decimals, '.', '') . '</span></td><td><input type="text" class="form-control" value="' . number_format((float)$cash, $this->setting->decimals, '.', '') . '" placeholder="0.00"  maxlength="11" id="countedcash"></td><td><span id="diffcash">0.00</span></td></tr><tr><td>' . label("CreditCard") . '</td><td><span id="expectedcc">' . number_format((float)$cc, $this->setting->decimals, '.', '') . '</span></td><td><input type="text" class="form-control" value="' . number_format((float)$cc, $this->setting->decimals, '.', '') . '" placeholder="0.00"  maxlength="11" id="countedcc"></td><td><span id="diffcc">0.00</span></td></tr><tr><td>' . label("Yape") . '</td><td><span id="expectedcheque">' . number_format((float)$cheque, $this->setting->decimals, '.', '') . '</span></td><td><input type="text" class="form-control" value="' . number_format((float)$cheque, $this->setting->decimals, '.', '') . '" placeholder="0.00"  maxlength="11" id="countedcheque"></td><td><span id="diffcheque">0.00</span></td></tr><tr class="warning"><td>' . label("Total") . '</td><td><span id="total">' . number_format((float)($cheque + $cash + $cc), $this->setting->decimals, '.', '') . '</span></td><td><span id="countedtotal">' . number_format((float)($cheque + $cash + $cc), $this->setting->decimals, '.', '') . '</span></td><td><span id="difftotal">0.00</span></td></tr></table></div>';
+            //previous cut off amounts
+            $previousCutOff=0;
+            foreach ($registerAll as $r) {
+                $cutOffTime = date("H:i:s", strtotime(($r->date)));
+                $user = User::find($r->user_id);
+                $username = ($user->firstname . " " . $user->lastname);
+                if ($r->closed_by != null) {
+                    $previousCutOff += $r->cash_total;
+                }
+            }
+            $data = '<div class="row"><div class="col-md-3"><blockquote><footer>' . label("Openedby") . '</footer><p>' . $createdBy . '</p></blockquote></div><div class="col-md-2"><blockquote><footer>' . label("CashinHand") . '</footer><p>' . $this->setting->currency . ' ' . number_format((float)$CashinHand, $this->setting->decimals, '.', '') . '</p></blockquote></div><div class="col-md-2"><blockquote><footer>' . label("CashinHandCutOff") . '</footer><p>' . $this->setting->currency . ' ' . number_format((float)($CashinHand+$cheque + $cash + $cc), $this->setting->decimals, '.', '') . '</p></blockquote></div><div class="col-md-3"><blockquote><footer>' . label("Fecha") . '</footer><p>' . date('Y-m-d h:i:s') . '</p></blockquote></div><div class="col-md-2"><img src="' . site_url() . '/assets/img/register.svg" alt=""></div></div><h2>' . label("PaymentsSummary") . '</h2><div class="table-responsive"><table class="table table-striped"><tr><th width="25%">' . label("PayementType") . '</th><th width="25%">' . label("EXPECTED") . ' (' . $this->setting->currency . ')</th><th width="25%">' . label("COUNTED") . ' (' . $this->setting->currency . ')</th><th width="25%">' . label("DIFFERENCES") . ' (' . $this->setting->currency . ')</th></tr><tr><td>' . label("Cash") . '</td><td><span id="expectedcash">' . number_format((float)$cash, $this->setting->decimals, '.', '') . '</span></td><td><input type="text" class="form-control" value="' . number_format((float)$cash, $this->setting->decimals, '.', '') . '" placeholder="0.00"  maxlength="11" id="countedcash"></td><td><span id="diffcash">0.00</span></td></tr><tr><td>' . label("CreditCard") . '</td><td><span id="expectedcc">' . number_format((float)$cc, $this->setting->decimals, '.', '') . '</span></td><td><input type="text" class="form-control" value="' . number_format((float)$cc, $this->setting->decimals, '.', '') . '" placeholder="0.00"  maxlength="11" id="countedcc"></td><td><span id="diffcc">0.00</span></td></tr><tr><td>' . label("Yape") . '</td><td><span id="expectedcheque">' . number_format((float)$cheque, $this->setting->decimals, '.', '') . '</span></td><td><input type="text" class="form-control" value="' . number_format((float)$cheque, $this->setting->decimals, '.', '') . '" placeholder="0.00"  maxlength="11" id="countedcheque"></td><td><span id="diffcheque">0.00</span></td></tr><tr class="warning"><td>' . label("Total") . '</td><td><span id="total">' . number_format((float)($cheque + $cash + $cc), $this->setting->decimals, '.', '') . '</span></td><td><span id="countedtotal">' . number_format((float)($cheque + $cash + $cc), $this->setting->decimals, '.', '') . '</span></td><td><span id="difftotal">0.00</span></td></tr></table></div>';
 
             foreach ($waiters as $waiter) {
                 foreach ($registerAll as $item) {
@@ -1209,7 +1219,7 @@ class Pos extends CI_Controller
                 $cutOffTime = date("H:i:s", strtotime(($r->date)));
                 $user = User::find($r->user_id);
                 $username = ($user->firstname . " " . $user->lastname);
-                if ($r->cash_total != 0) {
+                if ($r->closed_by != null) {
                     $totalCash = $r->cash_total;
                     $data .= '<div class="waitercount"><ul><li><h4> Corte #' . $cutOffCounter++ . '</h4></li><li><b>' . label("cutOffAmount") . ' : ' . number_format((float)$totalCash, $this->setting->decimals, '.', '') . ' ' . $this->setting->currency . '</b></li><li><b>' . label("cutOffTime") . ' : </b>' . $cutOffTime . '</li><li><b>' . label("cutOffPerson") . ' : </b>' . $username . '</li></ul><div style="clear:both;"></div><div class="wtotal"><h3>' . label("Total") . ' : ' . number_format((float)$totalCash, $this->setting->decimals, '.', '') . ' ' . $this->setting->currency . '</h3></div></div>';
                 }
@@ -1221,7 +1231,7 @@ class Pos extends CI_Controller
             die($e->getMessage());
         }
     }
-
+   
     public function SubmitRegister()
     {
         date_default_timezone_set($this->setting->timezone);
@@ -1560,7 +1570,7 @@ class Pos extends CI_Controller
         $waiters = Waiter::find('all', array('conditions' => array('store_id = ?', $id)));
         $content = '';
         foreach ($waiters as $waiter) {
-            $content .= '<div class="form-group"><label for="CashinHand"><u>' . $waiter->name . '</u> ' . label("CashinHand") . '</label><input type="number" step="any" class="form-control" id="waiterid" waiter-id="' . $waiter->id . '" placeholder="' . $waiter->name . ' ' . label("CashinHand") . '" Required></div>';
+            $content .= '<div class="form-group"><label for="CashinHand"><u>' . $waiter->name . '</u> ' . label("CashinHand") . '</label><input type="number" step="any" class="form-control" id="waiterid" waiter-id="' . $waiter->id . '" value="0" placeholder="' . $waiter->name . ' ' . label("CashinHand") . '" Required></div>';
         }
         echo $content;
     }
