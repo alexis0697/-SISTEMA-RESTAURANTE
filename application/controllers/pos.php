@@ -1079,8 +1079,110 @@ class Pos extends CI_Controller
         $data .= '<div  class="form-group"><h2>' . label("note") . '</h2><textarea id="RegisterNote" class="form-control" rows="3"></textarea></div>';
 
         echo $data;
-    }
+    }public function CloseRegisterPDF()
+    {
+        $register = Register::find($this->register);
+        $user = User::find($register->user_id);
+        $sales = Sale::find('all', array(
+            'conditions' => array(
+                'register_id = ? AND canceled = ?',
+                $this->register,
+                0
+            )
+        ));
+        $payaments = Payement::find('all', array(
+            'conditions' => array(
+                'register_id = ?',
+                $this->register
+            )
+        ));
 
+        $waiters = Waiter::find('all', array('conditions' => array('store_id = ?', $register->store_id)));
+
+        $cash = 0;
+        $cheque = 0;
+        $cc = 0;
+        $CashinHand = $register->cash_inhand;
+        $date = $register->date;
+        $createdBy = $user->firstname . ' ' . $user->lastname;
+
+        foreach ($payaments as $payament) {
+            $PayMethode = explode('~', $payament->paidmethod);
+            switch ($PayMethode[0]) {
+                case '1': // case Credit Card
+                    $cc += $payament->paid;
+                    break;
+                case '2': // case ckeck
+                    $cheque += $payament->paid;
+                    break;
+                default:
+                    $cash += $payament->paid;
+            }
+        }
+
+        foreach ($sales as $sale) {
+            $PayMethode = explode('~', $sale->paidmethod);
+            $paystatus = $sale->paid - $sale->total;
+            switch ($PayMethode[0]) {
+                case '1': // case Credit Card
+                    $cc += $paystatus > 0 ? $sale->total : $sale->firstpayement;
+                    break;
+                case '2': // case ckeck
+                    $cheque += $paystatus > 0 ? $sale->total : $sale->firstpayement;
+                    break;
+                default:
+                    $cash += $paystatus > 0 ? $sale->total : $sale->firstpayement;
+            }
+        }
+        $data = '<div class="col-md-3"><blockquote><footer>' . label("Openedby") . ': ' . $createdBy . ' || ' . label("CashinHand") . ': ' . $this->setting->currency . ' ' . number_format((float)$CashinHand, $this->setting->decimals, '.', '') . ' || ' . label("CashinHandCutOff") . ': ' . $this->setting->currency . ' ' . number_format((float)($CashinHand+$cheque + $cash + $cc), $this->setting->decimals, '.', '') . ' </p> '. label("Openingtime") . ': ' . $date->format('Y-m-d h:i:s') . '</p></blockquote></div><h2>' . label("PaymentsSummary") . '</h2><div class="table-responsive"><table class="table table-striped"><tr><th width="25%">' . label("PayementType") . '</th><th width="25%">' . label("EXPECTED") . ' (' . $this->setting->currency . ')</th><th width="25%">' . label("COUNTED") . ' (' . $this->setting->currency . ')</th><th width="25%">' . label("DIFFERENCES") . ' (' . $this->setting->currency . ')</th></tr><tr><td>' . label("Cash") . '</td><td><span id="expectedcash">' . number_format((float)$cash, $this->setting->decimals, '.', '') . '</span></td><td><input type="text" class="form-control" value="' . number_format((float)$cash, $this->setting->decimals, '.', '') . '" placeholder="0.00"  maxlength="11" id="countedcash"></td><td><span id="diffcash">0.00</span></td></tr><tr><td>' . label("CreditCard") . '</td><td><span id="expectedcc">' . number_format((float)$cc, $this->setting->decimals, '.', '') . '</span></td><td><input type="text" class="form-control" value="' . number_format((float)$cc, $this->setting->decimals, '.', '') . '" placeholder="0.00"  maxlength="11" id="countedcc"></td><td><span id="diffcc">0.00</span></td></tr><tr><td>' . label("Yape") . '</td><td><span id="expectedcheque">' . number_format((float)$cheque, $this->setting->decimals, '.', '') . '</span></td><td><input type="text" class="form-control" value="' . number_format((float)$cheque, $this->setting->decimals, '.', '') . '" placeholder="0.00"  maxlength="11" id="countedcheque"></td><td><span id="diffcheque">0.00</span></td></tr><tr class="warning"><td>' . label("Total") . '</td><td><span id="total">' . number_format((float)($cheque + $cash + $cc), $this->setting->decimals, '.', '') . '</span></td><td><span id="countedtotal">' . number_format((float)($cheque + $cash + $cc), $this->setting->decimals, '.', '') . '</span></td><td><span id="difftotal">0.00</span></td></tr></table></div>';
+
+        foreach ($waiters as $waiter) {
+            $cih = explode(',', trim($register->waiterscih, ","));
+            $cachin = 0;
+            for ($i = 0; $i < sizeof($cih); $i += 2) {
+                if ($cih[$i] == $waiter->id) {
+                    $cachin = $cih[$i + 1];
+                }
+            }
+            $cashw = 0;
+            $chequew = 0;
+            $ccw = 0;
+            foreach ($payaments as $payament) {
+                if ($payament->waiter_id == $waiter->id) {
+                    $PayMethode = explode('~', $payament->paidmethod);
+                    switch ($PayMethode[0]) {
+                        case '1': // case Credit Card
+                            $ccw += $payament->paid;
+                            break;
+                        case '2': // case ckeck
+                            $chequew += $payament->paid;
+                            break;
+                        default:
+                            $cashw += $payament->paid;
+                    }
+                }
+            }
+            foreach ($sales as $sale) {
+                if ($sale->waiter_id == $waiter->id) {
+                    $PayMethode = explode('~', $sale->paidmethod);
+                    $paystatus = $sale->paid - $sale->total;
+                    switch ($PayMethode[0]) {
+                        case '1': // case Credit Card
+                            $ccw += $paystatus > 0 ? $sale->total : $sale->firstpayement;
+                            break;
+                        case '2': // case ckeck
+                            $chequew += $paystatus > 0 ? $sale->total : $sale->firstpayement;
+                            break;
+                        default:
+                            $cashw += $paystatus > 0 ? $sale->total : $sale->firstpayement;
+                    }
+                }
+            }
+            $Wtotal = $ccw + $chequew + $cashw + $cachin;
+            $data .= '<hr><div class="waitercount"><ul><li><h4>' . $waiter->name . ' :</h4></li><b>' . label("CashinHand") . ' : </b>' . number_format((float)$cachin, $this->setting->decimals, '.', '') . ' ' . $this->setting->currency . '<b>' . label("Cash") . ' : </b>' . number_format((float)$cashw, $this->setting->decimals, '.', '') . ' ' . $this->setting->currency . '<b>' . label("CreditCard") . ' : </b>' . number_format((float)$ccw, $this->setting->decimals, '.', '') . ' ' . $this->setting->currency . '<b>' . label("Yape") . ' : </b>' . number_format((float)$chequew, $this->setting->decimals, '.', '') . ' ' . $this->setting->currency . '</ul><div style="clear:both;"></div><div class="wtotal"><h3>' . label("Total") . ' : ' . number_format((float)$Wtotal, $this->setting->decimals, '.', '') . '</h3></div></div><hr>';
+        }
+        echo $data;
+    }
     public function CloseRegisterAll()
     {
         $cutOffCounter = 1;
@@ -1231,7 +1333,155 @@ class Pos extends CI_Controller
             die($e->getMessage());
         }
     }
-   
+    //print Close Register
+    public function CloseRegisterAllPDF()
+    {
+        $cutOffCounter = 1;
+        try {
+            $register = Register::find($this->register);
+            $registerAll = Register::find('all', array(
+                'conditions' => array(
+                    'user_id = ? AND register_close_all = ?',
+                    $this->user->id,
+                    0
+                )
+            ));
+
+            $CashinHandAll = 0;
+            $idsAll = array();
+            foreach ($registerAll as $item) {
+                $CashinHandAll += $item->cash_inhand;
+                array_push($idsAll, $item->id);
+            }
+
+            $user = User::find($register->user_id);
+            $sales = Sale::find('all', array(
+                'conditions' => array(
+                    'register_id in(?) AND canceled = ?',
+                    $idsAll,
+                    0
+                )
+            ));
+            $payaments = Payement::find('all', array(
+                'conditions' => array(
+                    'register_id in(?)',
+                    $idsAll
+                )
+            ));
+
+            $waiters = Waiter::find('all', array('conditions' => array('store_id = ?', $register->store_id)));
+
+            $cash = 0;
+            $cheque = 0;
+            $cc = 0;
+            // $CashinHand = $register->cash_inhand;
+            $CashinHand = $CashinHandAll;
+            $date = $register->date;
+            $createdBy = $user->firstname . ' ' . $user->lastname;
+
+            foreach ($payaments as $payament) {
+                $PayMethode = explode('~', $payament->paidmethod);
+                switch ($PayMethode[0]) {
+                    case '1': // case Credit Card
+                        $cc += $payament->paid;
+                        break;
+                    case '2': // case ckeck
+                        $cheque += $payament->paid;
+                        break;
+                    default:
+                        $cash += $payament->paid;
+                }
+            }
+
+            foreach ($sales as $sale) {
+                $PayMethode = explode('~', $sale->paidmethod);
+                $paystatus = $sale->paid - $sale->total;
+                switch ($PayMethode[0]) {
+                    case '1': // case Credit Card
+                        $cc += $paystatus > 0 ? $sale->total : $sale->firstpayement;
+                        break;
+                    case '2': // case ckeck
+                        $cheque += $paystatus > 0 ? $sale->total : $sale->firstpayement;
+                        break;
+                    default:
+                        $cash += $paystatus > 0 ? $sale->total : $sale->firstpayement;
+                }
+            }
+            //previous cut off amounts
+            $previousCutOff=0;
+            foreach ($registerAll as $r) {
+                $cutOffTime = date("H:i:s", strtotime(($r->date)));
+                $user = User::find($r->user_id);
+                $username = ($user->firstname . " " . $user->lastname);
+                if ($r->closed_by != null) {
+                    $previousCutOff += $r->cash_total;
+                }
+            }
+            $data = '<div class="row"><div class="col-md-3"><blockquote><footer>' . label("Openedby") . ': ' . $createdBy . ' || ' . label("CashinHand") . ': ' . $this->setting->currency . ' ' . number_format((float)$CashinHand, $this->setting->decimals, '.', '') . ' || ' . label("CashinHandCutOff") . ': ' . $this->setting->currency . ' ' . number_format((float)($CashinHand+$cheque + $cash + $cc), $this->setting->decimals, '.', '') . '</p></blockquote></div><div class="col-md-3"><blockquote><footer>' . label("Fecha") . ': ' . date('Y-m-d h:i:s') . '</p></blockquote></div></div><hr><h2>' . label("PaymentsSummary") . '</h2><div class="table-responsive"><table class="table table-striped"><tr><th width="25%">' . label("PayementType") . '</th><th width="25%">' . label("EXPECTED") . ' (' . $this->setting->currency . ')</th><th width="25%">' . label("COUNTED") . ' (' . $this->setting->currency . ')</th><th width="25%">' . label("DIFFERENCES") . ' (' . $this->setting->currency . ')</th></tr><tr><td>' . label("Cash") . '</td><td><span id="expectedcash">' . number_format((float)$cash, $this->setting->decimals, '.', '') . '</span></td><td><input type="text" class="form-control" value="' . number_format((float)$cash, $this->setting->decimals, '.', '') . '" placeholder="0.00"  maxlength="11" id="countedcash"></td><td><span id="diffcash">0.00</span></td></tr><tr><td>' . label("CreditCard") . '</td><td><span id="expectedcc">' . number_format((float)$cc, $this->setting->decimals, '.', '') . '</span></td><td><input type="text" class="form-control" value="' . number_format((float)$cc, $this->setting->decimals, '.', '') . '" placeholder="0.00"  maxlength="11" id="countedcc"></td><td><span id="diffcc">0.00</span></td></tr><tr><td>' . label("Yape") . '</td><td><span id="expectedcheque">' . number_format((float)$cheque, $this->setting->decimals, '.', '') . '</span></td><td><input type="text" class="form-control" value="' . number_format((float)$cheque, $this->setting->decimals, '.', '') . '" placeholder="0.00"  maxlength="11" id="countedcheque"></td><td><span id="diffcheque">0.00</span></td></tr><tr class="warning"><td>' . label("Total") . '</td><td><span id="total">' . number_format((float)($cheque + $cash + $cc), $this->setting->decimals, '.', '') . '</span></td><td><span id="countedtotal">' . number_format((float)($cheque + $cash + $cc), $this->setting->decimals, '.', '') . '</span></td><td><span id="difftotal">0.00</span></td></tr></table></div>';
+
+            foreach ($waiters as $waiter) {
+                foreach ($registerAll as $item) {
+                    $cih = explode(',', trim($item->waiterscih, ","));
+                    $cachin = 0;
+                    for ($i = 0; $i < sizeof($cih); $i += 2) {
+                        if ($cih[$i] == $waiter->id) {
+                            $cachin = $cih[$i + 1];
+                        }
+                    }
+                    $cashw = 0;
+                    $chequew = 0;
+                    $ccw = 0;
+                    foreach ($payaments as $payament) {
+                        if ($payament->waiter_id == $waiter->id) {
+                            $PayMethode = explode('~', $payament->paidmethod);
+                            switch ($PayMethode[0]) {
+                                case '1': // case Credit Card
+                                    $ccw += $payament->paid;
+                                    break;
+                                case '2': // case ckeck
+                                    $chequew += $payament->paid;
+                                    break;
+                                default:
+                                    $cashw += $payament->paid;
+                            }
+                        }
+                    }
+                    foreach ($sales as $sale) {
+                        if ($sale->waiter_id == $waiter->id) {
+                            $PayMethode = explode('~', $sale->paidmethod);
+                            $paystatus = $sale->paid - $sale->total;
+                            switch ($PayMethode[0]) {
+                                case '1': // case Credit Card
+                                    $ccw += $paystatus > 0 ? $sale->total : $sale->firstpayement;
+                                    break;
+                                case '2': // case ckeck
+                                    $chequew += $paystatus > 0 ? $sale->total : $sale->firstpayement;
+                                    break;
+                                default:
+                                    $cashw += $paystatus > 0 ? $sale->total : $sale->firstpayement;
+                            }
+                        }
+                    }
+                    $Wtotal = $ccw + $chequew + $cashw + $cachin;
+                }
+                $data .= '<hr><div class="waitercount"><ul><li><h4>' . $waiter->name . ' :</h4></li><b>' . label("CashinHand") . ' : </b>' . number_format((float)$cachin, $this->setting->decimals, '.', '') . ' ' . $this->setting->currency . '</li><b>' . label("Cash") . ' : </b>' . number_format((float)$cashw, $this->setting->decimals, '.', '') . ' ' . $this->setting->currency . '</li><b>' . label("CreditCard") . ' : </b>' . number_format((float)$ccw, $this->setting->decimals, '.', '') . ' ' . $this->setting->currency . '</li><b>' . label("Yape") . ' : </b>' . number_format((float)$chequew, $this->setting->decimals, '.', '') . ' ' . $this->setting->currency . '</li></ul><div style="clear:both;"></div><div class="wtotal"><h3>' . label("Total") . ' : ' . number_format((float)$Wtotal, $this->setting->decimals, '.', '') . '</h3></div></div><hr>';
+            }
+            $data .= "<h2> Cortes del día</h2>";
+            $totalCash = 0;
+            foreach ($registerAll as $r) {
+                $cutOffTime = date("H:i:s", strtotime(($r->date)));
+                $user = User::find($r->user_id);
+                $username = ($user->firstname . " " . $user->lastname);
+                if ($r->closed_by != null) {
+                    $totalCash = $r->cash_total;
+                    $data .= '<div class="waitercount"><ul><h2> Corte #' . $cutOffCounter++ . '</h2><b> ' . label("cutOffAmount") . ' : ' . number_format((float)$totalCash, $this->setting->decimals, '.', '') . ' ' . $this->setting->currency . '</b><b> ' . label("cutOffTime") . ' : </b>' . $cutOffTime . '<b>' . label("cutOffPerson") . ' : </b>' . $username . ' </ul><div style="clear:both;"></div><div class="wtotal"><h3>' . label("Total") . ' : ' . number_format((float)$totalCash, $this->setting->decimals, '.', '') . ' ' . $this->setting->currency . '</h3></div></div>';
+                }
+            }      
+           echo  $data;
+        } catch (\Exception $e) {
+            die($e->getMessage());
+        }
+    }
     public function SubmitRegister()
     {
         date_default_timezone_set($this->setting->timezone);

@@ -170,6 +170,7 @@
          </ul>
          <!-- <a class="btn btn-primary float-right" style="margin-top:60px" href="pos/selectTable/0"><?= label("WalkinCustomer"); ?></a> -->
          <a class="btn btn-primary float-right" style="margin-top:60px" href="pos/selectTable/0"><?= label("DeliveryText"); ?></a>
+
          <?= !$zones ? '<h4 style="margin-top:60px">' . label("NoTables") . '</h4>' : ''; ?>
          <?php foreach ($zones as $zone) : ?>
             <div class="row">
@@ -251,7 +252,7 @@
                   <i class="fa fa-ticket fa-stack-1x fa-inverse dark-blue"></i>
                </span>
             </a> -->
-            </div>
+                  </div>
                   <div class="col-sm-8">
                      <select class="js-select-options form-control" id="customerSelect">
                         <option value="0"><?= label("WalkinCustomer"); ?></option>
@@ -266,8 +267,8 @@
 
                         <?php if ($delivery_flag) { ?>
                            <?php foreach ($waiters as $waiter) : ?>
-                              <?php if ( $waiter->name=="Delivery" || $waiter->name=="delivery") { ?>
-                              <option selected value="<?= $waiter->id; ?>"><?= $waiter->name; ?></option>
+                              <?php if ($waiter->name == "Delivery" || $waiter->name == "delivery") { ?>
+                                 <option selected value="<?= $waiter->id; ?>"><?= $waiter->name; ?></option>
                               <?php }  ?>
                            <?php endforeach; ?>
                         <?php } else {  ?>
@@ -1478,7 +1479,7 @@
                            </select>
                         </div>
                         <div class="form-group Paid">
-                          <label for="Paid"><?= label("Paid"); ?> </label>
+                           <label for="Paid"><?= label("Paid"); ?> </label>
                            <input type="number" value="0" <?php if ($delivery_flag) echo "disabled"; ?> name="paid" class="form-control <?= strval($this->setting->keyboard) === '1' ? 'paidk' : '' ?>" id="Paid" placeholder="<?= label("Paid"); ?>">
                         </div>
                         <div class="form-group CreditCardNum">
@@ -1902,6 +1903,27 @@
             });
       }
 
+      function printCutOffAll(action) {
+         $.ajax({
+            url: "<?php echo site_url('pos/') ?>/" + action,
+            type: "GET",
+            success: function(data) {
+               var ficha = data;
+               var ventimp = window.open(' ', 'popimpr');
+               ventimp.document.write(data);
+               ventimp.document.close();
+               ventimp.print();
+               ventimp.close();
+            },
+            error: function(jqXHR, textStatus, errorThrown) {
+               alert("error");
+            }
+         });
+
+
+      }
+
+
       function SubmitRegisterAll() {
          var expectedcash = $('#expectedcash').text();
          var countedcash = $('#countedcash').val();
@@ -2017,10 +2039,15 @@
             <div class="modal-body">
                <div id="closeregsection">
                   <!-- close register detail goes here -->
-               </div>
+               </div><a class="btn btn-primary col-md-12 flat-box-btn" onclick="printCutOffAll('CloseRegisterPDF');" target="_blank">
+                  Imprimir Cerrar Caja Parcial
+               </a>
+               <br>
+               <a href="javascript:void(0)" onclick="SubmitRegister()" class="btn btn-red col-md-12 flat-box-btn"><?= label("CloseRegister"); ?></a>
             </div>
             <div class="modal-footer">
-               <a href="javascript:void(0)" onclick="SubmitRegister()" class="btn btn-red col-md-12 flat-box-btn"><?= label("CloseRegister"); ?></a>
+
+
             </div>
          </div>
       </div>
@@ -2039,9 +2066,14 @@
                <div id="closeregsectionall">
                   <!-- close register detail goes here -->
                </div>
+               <a class="btn btn-primary col-md-12 flat-box-btn" onclick="printCutOffAll('CloseRegisterAllPDF');" target="_blank">
+                  Imprimir Cerrar Caja Total
+               </a>
+               <br>
+               <a href="javascript:void(0)" onclick="SubmitRegisterAll()" class="btn btn-red col-md-12 flat-box-btn"><?= label("CloseRegisterAll"); ?></a>
             </div>
             <div class="modal-footer">
-               <a href="javascript:void(0)" onclick="SubmitRegisterAll()" class="btn btn-red col-md-12 flat-box-btn"><?= label("CloseRegisterAll"); ?></a>
+
             </div>
          </div>
       </div>
