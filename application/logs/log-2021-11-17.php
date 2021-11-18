@@ -818,3 +818,99 @@ ERROR - 2021-11-17 21:23:39 --> Could not find the language line "Si cambiar"
 ERROR - 2021-11-17 21:24:46 --> Could not find the language line "Cambiar estado del plato a servido."
 ERROR - 2021-11-17 21:24:46 --> Could not find the language line "Si cambiar"
 ERROR - 2021-11-17 21:30:20 --> Could not find the language line "Fecha"
+ERROR - 2021-11-17 21:53:13 --> Could not find the language line "Gastos Hoy"
+ERROR - 2021-11-17 21:53:13 --> Could not find the language line "Balance del Día"
+ERROR - 2021-11-17 22:06:31 --> Could not find the language line "Cambiar estado del plato a servido."
+ERROR - 2021-11-17 22:06:31 --> Could not find the language line "Si cambiar"
+ERROR - 2021-11-17 22:08:57 --> Could not find the language line "Fecha"
+ERROR - 2021-11-17 22:09:52 --> Could not find the language line "Cambiar estado del plato a servido."
+ERROR - 2021-11-17 22:09:52 --> Could not find the language line "Si cambiar"
+ERROR - 2021-11-17 22:09:54 --> Could not find the language line "Fecha"
+ERROR - 2021-11-17 22:14:32 --> Could not find the language line "Cambiar estado del plato a servido."
+ERROR - 2021-11-17 22:14:32 --> Could not find the language line "Si cambiar"
+ERROR - 2021-11-17 22:14:33 --> Could not find the language line "IMPRIMIR PEDIDO PARA COCINA"
+ERROR - 2021-11-17 22:14:33 --> Could not find the language line "Pedido"
+ERROR - 2021-11-17 22:14:33 --> Could not find the language line "Tipo de Cliente"
+ERROR - 2021-11-17 22:14:33 --> Could not find the language line "NIT"
+ERROR - 2021-11-17 22:14:33 --> Could not find the language line "NIT"
+ERROR - 2021-11-17 22:14:33 --> Could not find the language line "Cambiar estado del plato a servido."
+ERROR - 2021-11-17 22:14:33 --> Could not find the language line "Si cambiar"
+ERROR - 2021-11-17 22:14:34 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 405
+ERROR - 2021-11-17 22:14:34 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 425
+ERROR - 2021-11-17 22:14:37 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 405
+ERROR - 2021-11-17 22:14:37 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 425
+ERROR - 2021-11-17 22:14:37 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 425
+ERROR - 2021-11-17 22:14:37 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 405
+ERROR - 2021-11-17 22:14:39 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 425
+ERROR - 2021-11-17 22:14:39 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 405
+ERROR - 2021-11-17 22:14:40 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 425
+ERROR - 2021-11-17 22:14:40 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 405
+ERROR - 2021-11-17 22:14:40 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 425
+ERROR - 2021-11-17 22:14:40 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 405
+ERROR - 2021-11-17 22:14:46 --> Could not find the language line "IMPRIMIR PEDIDO PARA COCINA"
+ERROR - 2021-11-17 22:14:46 --> Could not find the language line "Pedido"
+ERROR - 2021-11-17 22:14:46 --> Could not find the language line "Tipo de Cliente"
+ERROR - 2021-11-17 22:14:46 --> Could not find the language line "NIT"
+ERROR - 2021-11-17 22:14:46 --> Could not find the language line "NIT"
+ERROR - 2021-11-17 22:14:46 --> Could not find the language line "Cambiar estado del plato a servido."
+ERROR - 2021-11-17 22:14:46 --> Could not find the language line "Si cambiar"
+ERROR - 2021-11-17 22:14:46 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 405
+ERROR - 2021-11-17 22:14:46 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 425
+ERROR - 2021-11-17 22:14:58 --> Could not find the language line "Estado"
+ERROR - 2021-11-17 22:19:58 --> Could not find the language line "IMPRIMIR PEDIDO PARA COCINA"
+ERROR - 2021-11-17 22:19:58 --> Could not find the language line "Pedido"
+ERROR - 2021-11-17 22:19:58 --> Could not find the language line "Tipo de Cliente"
+ERROR - 2021-11-17 22:19:58 --> Could not find the language line "NIT"
+ERROR - 2021-11-17 22:19:58 --> Could not find the language line "NIT"
+ERROR - 2021-11-17 22:19:58 --> Could not find the language line "Cambiar estado del plato a servido."
+ERROR - 2021-11-17 22:19:58 --> Could not find the language line "Si cambiar"
+ERROR - 2021-11-17 22:19:58 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 405
+ERROR - 2021-11-17 22:19:58 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 425
+ERROR - 2021-11-17 22:20:06 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 405
+ERROR - 2021-11-17 22:20:06 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 425
+ERROR - 2021-11-17 22:20:07 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 405
+ERROR - 2021-11-17 22:20:07 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 425
+ERROR - 2021-11-17 22:20:08 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 425
+ERROR - 2021-11-17 22:20:08 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 405
+ERROR - 2021-11-17 22:20:08 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 405
+ERROR - 2021-11-17 22:20:08 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 425
+ERROR - 2021-11-17 22:20:26 --> Could not find the language line "Cambiar estado del plato a servido."
+ERROR - 2021-11-17 22:20:26 --> Could not find the language line "Si cambiar"
+ERROR - 2021-11-17 22:20:29 --> Could not find the language line "IMPRIMIR PEDIDO PARA COCINA"
+ERROR - 2021-11-17 22:20:29 --> Could not find the language line "Pedido"
+ERROR - 2021-11-17 22:20:29 --> Could not find the language line "Tipo de Cliente"
+ERROR - 2021-11-17 22:20:29 --> Could not find the language line "NIT"
+ERROR - 2021-11-17 22:20:29 --> Could not find the language line "NIT"
+ERROR - 2021-11-17 22:20:29 --> Could not find the language line "Cambiar estado del plato a servido."
+ERROR - 2021-11-17 22:20:29 --> Could not find the language line "Si cambiar"
+ERROR - 2021-11-17 22:20:29 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 405
+ERROR - 2021-11-17 22:20:29 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 425
+ERROR - 2021-11-17 22:20:30 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 405
+ERROR - 2021-11-17 22:20:30 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 425
+ERROR - 2021-11-17 22:20:30 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 405
+ERROR - 2021-11-17 22:20:30 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 425
+ERROR - 2021-11-17 22:20:31 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 425
+ERROR - 2021-11-17 22:20:31 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 405
+ERROR - 2021-11-17 22:20:38 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 405
+ERROR - 2021-11-17 22:20:38 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 425
+ERROR - 2021-11-17 22:20:39 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 425
+ERROR - 2021-11-17 22:20:39 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 405
+ERROR - 2021-11-17 22:20:39 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 425
+ERROR - 2021-11-17 22:20:39 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 405
+ERROR - 2021-11-17 22:20:54 --> Could not find the language line "Cambiar estado del plato a servido."
+ERROR - 2021-11-17 22:20:54 --> Could not find the language line "Si cambiar"
+ERROR - 2021-11-17 22:20:56 --> Could not find the language line "IMPRIMIR PEDIDO PARA COCINA"
+ERROR - 2021-11-17 22:20:56 --> Could not find the language line "Pedido"
+ERROR - 2021-11-17 22:20:56 --> Could not find the language line "Tipo de Cliente"
+ERROR - 2021-11-17 22:20:56 --> Could not find the language line "NIT"
+ERROR - 2021-11-17 22:20:56 --> Could not find the language line "NIT"
+ERROR - 2021-11-17 22:20:56 --> Could not find the language line "Cambiar estado del plato a servido."
+ERROR - 2021-11-17 22:20:56 --> Could not find the language line "Si cambiar"
+ERROR - 2021-11-17 22:20:56 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 425
+ERROR - 2021-11-17 22:20:56 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 405
+ERROR - 2021-11-17 22:20:57 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 405
+ERROR - 2021-11-17 22:20:57 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 425
+ERROR - 2021-11-17 22:20:58 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 405
+ERROR - 2021-11-17 22:20:58 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 425
+ERROR - 2021-11-17 22:20:58 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 405
+ERROR - 2021-11-17 22:20:58 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 425

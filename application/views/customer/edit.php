@@ -31,10 +31,9 @@
             <div class="form-group">
                <label for="CustomerTypeDocument"><?= label("CustomerTypeDocument"); ?></label>
                <select class="form-control" name="typedocument" id="CustomerTypeDocument" required>
-                  <option value="1" <?= $customer->typedocument === 1 ? 'selected' : ''; ?>>DNI</option>
+                  <option value="1" <?= $customer->typedocument === 1 ? 'selected' : ''; ?>>DUI</option>
                   <option value="2" <?= $customer->typedocument === 2 ? 'selected' : ''; ?>>CARNET EXTRANJERÍA</option>
-                  <option value="3" <?= $customer->typedocument === 3 ? 'selected' : ''; ?>>RUC</option>
-                  <option value="4" <?= $customer->typedocument === 4 ? 'selected' : ''; ?>>PASAPORTE</option>
+                  <option value="3" <?= $customer->typedocument === 3 ? 'selected' : ''; ?>>PASAPORTE</option>
                </select>
             </div>
          </div>

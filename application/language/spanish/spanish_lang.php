@@ -214,6 +214,7 @@ $lang['CashinHandCutOff'] = "Saldo al Cerrar";
 $lang['cutOffAmount']="Monto del corte";
 $lang['cutOffTime']="Hora corte";
 $lang['cutOffPerson']="Corte hecho por:";
+$lang['cutOffMoney']="Difererencias: ";
 $lang['CloseMessageRegister'] = "Usted no será capaz de recuperar el pedido más tarde!";
 $lang['yesClose'] = "Sí, Ciérralo!";
 $lang['TotalRevenue'] = "Los ingresos totales";

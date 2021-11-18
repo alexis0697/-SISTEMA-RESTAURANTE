@@ -1722,7 +1722,7 @@
                   var difftot = change + parseFloat($('#diffcc').text()) + parseFloat($('#diffcheque').text());
                   var total = parseFloat($('#countedcc').val()) + parseFloat($('#countedcheque').val()) + parseFloat($('#countedcash').val());
                   $('#countedtotal').text(total.toFixed(<?= $this->setting->decimals; ?>));
-                  $('#difftotal').text(difftot.toFixed(<?= $this->setting->decimals; ?>))
+                  $('#difftotal').text(difftot.toFixed(<?= $this->setting->decimals; ?>));
                   if (change < 0) {
                      $('#diffcash').text(change.toFixed(<?= $this->setting->decimals; ?>));
                      $('#diffcash').addClass("red");
@@ -1739,7 +1739,7 @@
                   var difftot = change + parseFloat($('#diffcash').text()) + parseFloat($('#diffcheque').text());
                   var total = parseFloat($('#countedcc').val()) + parseFloat($('#countedcheque').val()) + parseFloat($('#countedcash').val());
                   $('#countedtotal').text(total.toFixed(<?= $this->setting->decimals; ?>));
-                  $('#difftotal').text(difftot.toFixed(<?= $this->setting->decimals; ?>))
+                  $('#difftotal').text(difftot.toFixed(<?= $this->setting->decimals; ?>));
                   if (change < 0) {
                      $('#diffcc').text(change.toFixed(<?= $this->setting->decimals; ?>));
                      $('#diffcc').addClass("red");
@@ -1756,7 +1756,7 @@
                   var difftot = change + parseFloat($('#diffcc').text()) + parseFloat($('#diffcash').text());
                   var total = parseFloat($('#countedcc').val()) + parseFloat($('#countedcheque').val()) + parseFloat($('#countedcash').val());
                   $('#countedtotal').text(total.toFixed(<?= $this->setting->decimals; ?>));
-                  $('#difftotal').text(difftot.toFixed(<?= $this->setting->decimals; ?>))
+                  $('#difftotal').text(difftot.toFixed(<?= $this->setting->decimals; ?>));
                   if (change < 0) {
                      $('#diffcheque').text(change.toFixed(<?= $this->setting->decimals; ?>));
                      $('#diffcheque').addClass("red");
@@ -1789,7 +1789,7 @@
                   var difftot = change + parseFloat($('#diffcc').text()) + parseFloat($('#diffcheque').text());
                   var total = parseFloat($('#countedcc').val()) + parseFloat($('#countedcheque').val()) + parseFloat($('#countedcash').val());
                   $('#countedtotal').text(total.toFixed(<?= $this->setting->decimals; ?>));
-                  $('#difftotal').text(difftot.toFixed(<?= $this->setting->decimals; ?>))
+                  $('#difftotal').text(difftot.toFixed(<?= $this->setting->decimals; ?>)); 
                   if (change < 0) {
                      $('#diffcash').text(change.toFixed(<?= $this->setting->decimals; ?>));
                      $('#diffcash').addClass("red");
@@ -1806,7 +1806,7 @@
                   var difftot = change + parseFloat($('#diffcash').text()) + parseFloat($('#diffcheque').text());
                   var total = parseFloat($('#countedcc').val()) + parseFloat($('#countedcheque').val()) + parseFloat($('#countedcash').val());
                   $('#countedtotal').text(total.toFixed(<?= $this->setting->decimals; ?>));
-                  $('#difftotal').text(difftot.toFixed(<?= $this->setting->decimals; ?>))
+                  $('#difftotal').text(difftot.toFixed(<?= $this->setting->decimals; ?>))  ; 
                   if (change < 0) {
                      $('#diffcc').text(change.toFixed(<?= $this->setting->decimals; ?>));
                      $('#diffcc').addClass("red");
@@ -1823,7 +1823,7 @@
                   var difftot = change + parseFloat($('#diffcc').text()) + parseFloat($('#diffcash').text());
                   var total = parseFloat($('#countedcc').val()) + parseFloat($('#countedcheque').val()) + parseFloat($('#countedcash').val());
                   $('#countedtotal').text(total.toFixed(<?= $this->setting->decimals; ?>));
-                  $('#difftotal').text(difftot.toFixed(<?= $this->setting->decimals; ?>))
+                  $('#difftotal').text(difftot.toFixed(<?= $this->setting->decimals; ?>));    
                   if (change < 0) {
                      $('#diffcheque').text(change.toFixed(<?= $this->setting->decimals; ?>));
                      $('#diffcheque').addClass("red");
@@ -1867,6 +1867,7 @@
          var expectedcheque = $('#expectedcheque').text();
          var countedcheque = $('#countedcheque').val();
          var RegisterNote = $('#RegisterNote').val();
+         var deliveryAmount = $('#deliveryAmountPartial').val();
 
          swal({
                title: '<?= label("Areyousure"); ?>',
@@ -1889,7 +1890,8 @@
                      countedcc: countedcc,
                      expectedcheque: expectedcheque,
                      countedcheque: countedcheque,
-                     RegisterNote: RegisterNote
+                     RegisterNote: RegisterNote,
+                     deliveryAmount:deliveryAmount
                   },
                   success: function(data) {
                      window.location.href = "<?php echo site_url() ?>";

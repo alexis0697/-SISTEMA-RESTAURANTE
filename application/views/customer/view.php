@@ -31,10 +31,9 @@
                   <tr>
                     <td>
                       <?php
-                      if ($customer->typedocument == 1) echo "DNI";
+                      if ($customer->typedocument == 1) echo "DUI";
                       if ($customer->typedocument == 2) echo "CARNET EXTRANJERÍA";
-                      if ($customer->typedocument == 3) echo "RUC";
-                      if ($customer->typedocument == 4) echo "PASAPORTE";
+                      if ($customer->typedocument == 3) echo "PASAPORTE";
                       ?>
                     </td>
                     <td><?= $customer->document; ?></td>
@@ -92,10 +91,9 @@
             <div class="form-group">
               <label for="CustomerTypeDocument"><?= label("CustomerTypeDocument"); ?></label>
               <select class="form-control" name="typedocument" id="CustomerTypeDocument" required>
-                <option value="1">DNI</option>
+                <option value="1">DUI</option>
                 <option value="2">CARNET EXTRANJERÍA</option>
-                <option value="3">RUC</option>
-                <option value="4">PASAPORTE</option>
+                <option value="3">PASAPORTE</option>
               </select>
             </div>
           </div>
