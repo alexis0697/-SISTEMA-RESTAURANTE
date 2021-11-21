@@ -29,7 +29,7 @@ class Reports extends CI_Controller
         }
         $result .= '</tbody>
       </table>
-      <h1>' . label("Total") . ' : <span class="ReportTotal">'. $this->setting->currency . ' ' . $totals . '</span></h1>';
+      <h1>' . label("Total") . ' : <span class="ReportTotal">' . $this->setting->currency . ' ' . $totals . '</span></h1>';
 
         echo $result;
     }
@@ -45,7 +45,7 @@ class Reports extends CI_Controller
         $result = '<table id="Table" class="table table-striped table-bordered" cellspacing="0" width="100%"><thead><tr><th>' . label("SaleNum") . '</th><th>' . label("ProductName") . '</th><th>' . label("Cost") . '</th><th>' . label("Price") . '</th><th>' . label("Quantity") . '</th><th>' . label("tax") . '</th><th>' . label("Total") . '</th><th>' . label("Profit") . '</th></tr></thead><tbody>';
 
         foreach ($prducts as $prd) {
-            $tax = $prd->subtotal * intval(substr($prduct->tax, 0, - 1)) / 100;
+            $tax = $prd->subtotal * intval(substr($prduct->tax, 0, -1)) / 100;
             $profit = $prd->subtotal - $tax - ($prduct->cost * $prd->qt);
             $result .= '<tr><td>' . $prd->id . '</td><td>' . $prd->name . '</td><td>' . $prduct->cost . ' ' . $this->setting->currency . '</td><td>' . number_format((float)$prd->price, $this->setting->decimals, '.', '') . ' ' . $this->setting->currency . '</td><td>' . $prd->qt . '</td><td>' . $prduct->tax . '(' . $tax . ' ' . $this->setting->currency . ')</td><td>' . $prd->subtotal . ' ' . $this->setting->currency . '</td><td>' . number_format((float)$profit, $this->setting->decimals, '.', '') . ' ' . $this->setting->currency . '</td></tr>';
             $totalprofit += $profit;
@@ -55,7 +55,70 @@ class Reports extends CI_Controller
 
         echo $result;
     }
+    public function getDailySellsReport()
+    {
+        $item = 1;
+        $comprobante = "";
+        $date = "";
+        $totalDay = 0;
+        $start = $this->input->post('start');
+        $end = $this->input->post('end');
+        $flag = false;
+        try {
+            $dailySales = Sale::find_by_sql("SELECT created_at as date, typedocument_id as comprobante,COUNT(typedocument_id) as total_comprobante,SUM(paid) as pagado FROM `zarest_sales` WHERE created_at between '$start' AND '$end' GROUP BY DAY(created_at),(typedocument_id);");
+            $dailyTotals = Sale::find_by_sql("SELECT created_at as date, typedocument_id as comprobante,COUNT(typedocument_id) as total_comprobante,SUM(paid) as pagado FROM `zarest_sales` WHERE created_at between '$start' AND '$end' GROUP BY DAY(created_at),(typedocument_id);");
+            $result = '<table id="tblVentasDia" class="table table-striped table-bordered" cellspacing="0" width="100%">
+        <thead>
+           <tr>
+              <th>Item</th>
+              <th>Fecha</th>
+              <th>Tipo Comprobante</th>
+              <th>Cantidad de comprobantes</th>
+              <th>Total</th>
+           </tr>
+        </thead>
+        <tbody>';
+            foreach ($dailySales as $dailySale) {
+                $date1 = date("Y/m/d", strtotime($dailySale->date));
+                if ($dailySale->comprobante == 01) {
+                    $comprobante = "Factura";
+                } else if ($dailySale->comprobante == 999) {
+                    $comprobante = "Ticket";
+                } else {
+                    $comprobante = "Otro";
+                }
+                $result .= "<tr>
+                        <td>$item</td>
+                        <td>$date1</td>
+                        <td>$comprobante</td>
+                        <td>$dailySale->total_comprobante</td>
+                        <td>" . number_format((float)$dailySale->pagado, $this->setting->decimals, '.', '') . ' ' . $this->setting->currency . "</td>";
+                foreach ($dailyTotals as $totals) {
+                    $date2 = date("Y/m/d", strtotime($totals->date));
+                    if ($date1 == $date2) {
+                        $totalDay = $totalDay + $totals->pagado;
+                        if ($totals->pagado != $totalDay) {
+                            if($flag){
+                                $result .= "</tr><tr><td></td><td></td><td></td><td><b>$date2</b> Total factura + ticket</td><td><b>" . number_format((float)$totalDay, $this->setting->decimals, '.', '') . ' ' . $this->setting->currency . "</b></td></tr>";
+                                $flag=false;
+                            }else{
+                                $flag=true;
+                            }
+                        }
+                    } else {
+                        $totalDay = 0;
+                    }
+                }
+                $item++;
+            }
 
+            $result .= '</tbody></table>';
+        } catch (\Throwable $th) {
+            $result .= $th;
+        }
+
+        echo $result;
+    }
     public function getRegisterReport()
     {
         $store_id = $this->input->post('store_id');
@@ -69,17 +132,17 @@ class Reports extends CI_Controller
         <th>' . label("Cheque") . '</th><th> </th></tr></thead><tbody>';
 
         foreach ($register as $reg) {
-           if($this->user->role === "admin")
-            $action = '<div class="btn-group"><a class="btn btn-default" href="javascript:void(0)" onclick="delete_register(' . $reg->id . ')" title="' . label("Delete") . '"><i class="fa fa-times"></i></a></div>';
-           else
-            $action = '-';
-            $result .= '<tr><td><a href="javascript:void(0)" '.($reg->closed_at ? 'onclick="RegisterDetails(' . $reg->id . ')"' : '').'>' . $reg->date->format('Y-m-d h:i:s') . '</a></td>
+            if ($this->user->role === "admin")
+                $action = '<div class="btn-group"><a class="btn btn-default" href="javascript:void(0)" onclick="delete_register(' . $reg->id . ')" title="' . label("Delete") . '"><i class="fa fa-times"></i></a></div>';
+            else
+                $action = '-';
+            $result .= '<tr><td><a href="javascript:void(0)" ' . ($reg->closed_at ? 'onclick="RegisterDetails(' . $reg->id . ')"' : '') . '>' . $reg->date->format('Y-m-d h:i:s') . '</a></td>
             <td>' . ($reg->closed_at ? $reg->closed_at : label("Stillopen")) . '</td>
             <td>' . User::find($reg->user_id)->username . '</td>
             <td>' . number_format((float)$reg->cash_total, $this->setting->decimals, '.', '') . ' ' . $this->setting->currency . '</td>
             <td>' . number_format((float)$reg->cc_total, $this->setting->decimals, '.', '') . ' ' . $this->setting->currency . '</td>
             <td>' . number_format((float)$reg->cheque_total, $this->setting->decimals, '.', '') . ' ' . $this->setting->currency . '</td>
-            <td>'.$action.'</td></tr>';
+            <td>' . $action . '</td></tr>';
             $TotalRevenue += $reg->cash_total + $reg->cheque_total + $reg->cc_total;
         }
 
@@ -88,38 +151,39 @@ class Reports extends CI_Controller
         echo $result;
     }
 
-    public function delete_register($id){
+    public function delete_register($id)
+    {
 
-      $register = Register::find($id);
-      $sales = Sale::find('all', array(
-          'conditions' => array(
-             'register_id = ?',
-             $id
-          )
-      ));
-      foreach ($sales as $sale) {
-         Sale_item::delete_all(array(
-             'conditions' => array(
-                'sale_id = ?',
-                $sale->id
-             )
-         ));
-      }
-      Sale::delete_all(array(
-          'conditions' => array(
-             'register_id = ?',
-             $id
-          )
-      ));
-      Payement::delete_all(array(
-          'conditions' => array(
-             'register_id = ?',
-             $id
-          )
-      ));
+        $register = Register::find($id);
+        $sales = Sale::find('all', array(
+            'conditions' => array(
+                'register_id = ?',
+                $id
+            )
+        ));
+        foreach ($sales as $sale) {
+            Sale_item::delete_all(array(
+                'conditions' => array(
+                    'sale_id = ?',
+                    $sale->id
+                )
+            ));
+        }
+        Sale::delete_all(array(
+            'conditions' => array(
+                'register_id = ?',
+                $id
+            )
+        ));
+        Payement::delete_all(array(
+            'conditions' => array(
+                'register_id = ?',
+                $id
+            )
+        ));
 
-      $register->delete();
-   }
+        $register->delete();
+    }
 
     public function getyearstats($year)
     {
@@ -136,8 +200,16 @@ class Reports extends CI_Controller
     public function RegisterDetails($id)
     {
         $register = Register::find($id);
-        try{$user = User::find($register->user_id);}catch (\Exception $e){$user = "-";}
-        try{$user2 = User::find($register->closed_by);}catch (\Exception $e){$user2 = "-";}
+        try {
+            $user = User::find($register->user_id);
+        } catch (\Exception $e) {
+            $user = "-";
+        }
+        try {
+            $user2 = User::find($register->closed_by);
+        } catch (\Exception $e) {
+            $user2 = "-";
+        }
 
         $CashinHand = number_format((float)$register->cash_inhand, $this->setting->decimals, '.', '');
         $date = $register->date;
@@ -180,27 +252,27 @@ class Reports extends CI_Controller
         $store_id = $this->input->post('stock_id');
         $id = substr($store_id, 1);
         $products = Product::find('all');
-        if(strcmp($store_id[0], "S"))
-         $stype = 'warehouse_id';
+        if (strcmp($store_id[0], "S"))
+            $stype = 'warehouse_id';
         else
-         $stype = 'store_id';
-         // Stock::find('all', array('conditions' => array('store_id = ?', $id)));
+            $stype = 'store_id';
+        // Stock::find('all', array('conditions' => array('store_id = ?', $id)));
         $result = '<table id="Table" class="table table-striped table-bordered" cellspacing="0" width="100%"><thead><tr>
-        <th>' . label("Product") . ' ('.label("ProductCode").')</th>
+        <th>' . label("Product") . ' (' . label("ProductCode") . ')</th>
         <th>' . label("Quantity") . '</th></tr></thead><tbody>';
 
         foreach ($products as $prod) {
-           if($prod->type == '0'){
-           $class = '';
-           if(!($stock = Stock::find('first', array('conditions' => array($stype.' = ? AND product_id = ?', $id, $prod->id)))))
-            $stock = '-';
-         else
-            $stock = $stock->quantity;
+            if ($prod->type == '0') {
+                $class = '';
+                if (!($stock = Stock::find('first', array('conditions' => array($stype . ' = ? AND product_id = ?', $id, $prod->id)))))
+                    $stock = '-';
+                else
+                    $stock = $stock->quantity;
 
-           if($stock < $prod->alertqt)
-              $class = 'danger';
-            $result .= '<tr class='.$class.'>
-            <td>' . $prod->name . ' ('.$prod->code.')</td>
+                if ($stock < $prod->alertqt)
+                    $class = 'danger';
+                $result .= '<tr class=' . $class . '>
+            <td>' . $prod->name . ' (' . $prod->code . ')</td>
             <td>' . $stock . '</td></tr>';
             }
         }
@@ -215,11 +287,11 @@ class Reports extends CI_Controller
         $start = $this->input->post('start');
         $end = $this->input->post('end');
         $monthlySalesByProductsRows = Sale::find_by_sql("SELECT T1.product_id, T1.`name`,T1.price,SUM(T1.qt) AS cantidad,SUM(T1.subtotal) AS total FROM zarest_sale_items T1 WHERE DATE_FORMAT(T1.date, '%Y-%d-%m') >= '$start' AND DATE_FORMAT(T1.date, '%Y-%d-%m') <= '$end' AND T1.canceled = 0 GROUP BY T1.product_id, T1.`name`,T1.price ORDER BY SUM(T1.qt) DESC LIMIT 10");
-        
+
         $result = '';
         $item = 1;
         foreach ($monthlySalesByProductsRows as $product) {
-            $result .= '<tr><td>' .  $item . '</td><td>' . $product->name . '</td><td>' . $this->setting->currency . ' ' .  number_format($product->price,$this->setting->decimals, '.', '') . '</td><td>' .$product->cantidad . '</td><td>' . $this->setting->currency . ' ' .  number_format($product->total,$this->setting->decimals, '.', '') . '</td></tr>';
+            $result .= '<tr><td>' .  $item . '</td><td>' . $product->name . '</td><td>' . $this->setting->currency . ' ' .  number_format($product->price, $this->setting->decimals, '.', '') . '</td><td>' . $product->cantidad . '</td><td>' . $this->setting->currency . ' ' .  number_format($product->total, $this->setting->decimals, '.', '') . '</td></tr>';
             $item++;
         }
         echo $result;

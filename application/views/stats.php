@@ -45,6 +45,37 @@
    </div>
    <div class="card">
       <div class="card-header bg-info">
+         <h3 class="my-0">Reporte de Ventas Diarias (Ticket o Factura)</h3>
+      </div>
+      <div class="card-body">
+         <div class="row">
+            <div class="col-md-5">
+               <div class="form-group">
+                  <label><?= label('SelectRange'); ?></label>
+                  <div class="input-group margin-bottom-sm">
+                     <span class="input-group-addon RangePicker"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i></span>
+                     <input class="form-control" id="ReporteVentasRange" type="text" name="ReporteVentasRange" />
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-2">
+               <button style="margin-top: 23px;" class="cancelBtn btn btn-picker" type="button" onclick="getDailySellsReport();"><?= label('GetReport'); ?></button>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-12">
+               <div class="table-responsive">
+                  <div id="dailySales" >
+                     <h1>Seleccione una fecha para mostrar</h1>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="card">
+      <div class="card-header bg-info">
          <h3 class="my-0">Reporte de Ventas y Gastos por mes</h3>
       </div>
       <div class="card-body">
@@ -89,6 +120,7 @@
          </div>
       </div>
    </div>
+
    <div class="card">
       <div class="card-header bg-info">
          <h3 class="my-0">Reporte de Ventas por producto (Top 10 Platos)</h3>
@@ -343,6 +375,11 @@
             format: 'DD/MM/YYYY'
          }
       });
+      $('input[name="ReporteVentasRange"]').daterangepicker({
+         locale: {
+            format: 'DD/MM/YYYY'
+         }
+      });
       var d = new Date().getFullYear();
       $('#ProductRange').val('01/01/' + d + ' - 12/31/' + d);
       $('#CustomerRange').val('01/01/' + d + ' - 12/31/' + d);
@@ -521,6 +558,27 @@
                   'bProcessing': true
                }
             });
+         },
+         error: function(jqXHR, textStatus, errorThrown) {
+            alert("error");
+         }
+      });
+   }
+
+   function getDailySellsReport() {
+      var Range = $('#ReporteVentasRange').val();
+      var start = Range.slice(6, 10) + '-' + Range.slice(0, 2) + '-' + Range.slice(3, 5);
+      var end = Range.slice(19, 23) + '-' + Range.slice(13, 15) + '-' + Range.slice(16, 18);
+      // ajax set data to database
+      $.ajax({
+         url: "<?php echo site_url('reports/getDailySellsReport') ?>/",
+         type: "POST",
+         data: {
+            start: start,
+            end: end
+         },
+         success: function(data) {
+            $('#dailySales').html(data);
          },
          error: function(jqXHR, textStatus, errorThrown) {
             alert("error");

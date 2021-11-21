@@ -134,7 +134,7 @@
                <div class="modal-body">
                   <div class="form-group">
                      <label for="CashinHand"><?= label("CashinHand"); ?></label>
-                     <input type="number" step="any" name="cash" Required class="form-control" id="CashinHando" placeholder="<?= label("CashinHand"); ?>">
+                     <input type="number" step="any" name="cash" Required class="form-control" id="CashinHando" placeholder="<?= label("CashinHand"); ?>" value="0">
                      <input type="hidden" name="store" class="form-control" id="store">
                   </div>
                   <hr>
