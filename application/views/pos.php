@@ -1934,6 +1934,7 @@
          var expectedcheque = $('#expectedcheque').text();
          var countedcheque = $('#countedcheque').val();
          var RegisterNote = $('#RegisterNote').val();
+         var deliveryAmount= $('#deliveryAmount').val();
 
          swal({
                title: '<?= label("Areyousure"); ?>',
@@ -1956,7 +1957,8 @@
                      countedcc: countedcc,
                      expectedcheque: expectedcheque,
                      countedcheque: countedcheque,
-                     RegisterNote: RegisterNote
+                     RegisterNote: RegisterNote,
+                     deliveryAmount:deliveryAmount,
                   },
                   success: function(data) {
                      window.location.href = "<?php echo site_url() ?>";

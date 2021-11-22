@@ -479,3 +479,203 @@ ERROR - 2021-11-21 16:44:01 --> Severity: Warning  --> Invalid argument supplied
 ERROR - 2021-11-21 16:44:01 --> Severity: Notice  --> Undefined property: Expences_controller::$column_search E:\xampp\htdocs\puntorestaurantv3\system\core\Model.php 51
 ERROR - 2021-11-21 16:44:01 --> Severity: Warning  --> Invalid argument supplied for foreach() E:\xampp\htdocs\puntorestaurantv3\application\models\expence_model.php 46
 ERROR - 2021-11-21 16:44:16 --> Could not find the language line "Note"
+ERROR - 2021-11-21 16:46:37 --> Could not find the language line "Categoría"
+ERROR - 2021-11-21 16:46:37 --> Could not find the language line "Fecha Inicio"
+ERROR - 2021-11-21 16:46:37 --> Could not find the language line "Fecha Fin"
+ERROR - 2021-11-21 16:46:37 --> Could not find the language line "Monto del gasto "
+ERROR - 2021-11-21 16:46:37 --> Could not find the language line "Notas"
+ERROR - 2021-11-21 16:46:37 --> Severity: Notice  --> Undefined property: Expences_controller::$column_search E:\xampp\htdocs\puntorestaurantv3\system\core\Model.php 51
+ERROR - 2021-11-21 16:46:37 --> Severity: Warning  --> Invalid argument supplied for foreach() E:\xampp\htdocs\puntorestaurantv3\application\models\expence_model.php 46
+ERROR - 2021-11-21 16:46:37 --> Severity: Notice  --> Undefined property: Expences_controller::$column_search E:\xampp\htdocs\puntorestaurantv3\system\core\Model.php 51
+ERROR - 2021-11-21 16:46:37 --> Severity: Warning  --> Invalid argument supplied for foreach() E:\xampp\htdocs\puntorestaurantv3\application\models\expence_model.php 46
+ERROR - 2021-11-21 16:46:42 --> Severity: Notice  --> Undefined property: Expences_controller::$column_search E:\xampp\htdocs\puntorestaurantv3\system\core\Model.php 51
+ERROR - 2021-11-21 16:46:42 --> Severity: Warning  --> Invalid argument supplied for foreach() E:\xampp\htdocs\puntorestaurantv3\application\models\expence_model.php 46
+ERROR - 2021-11-21 16:46:42 --> Severity: Notice  --> Undefined property: Expences_controller::$column_search E:\xampp\htdocs\puntorestaurantv3\system\core\Model.php 51
+ERROR - 2021-11-21 16:46:42 --> Severity: Warning  --> Invalid argument supplied for foreach() E:\xampp\htdocs\puntorestaurantv3\application\models\expence_model.php 46
+ERROR - 2021-11-21 16:46:47 --> Could not find the language line "Note"
+ERROR - 2021-11-21 16:47:06 --> The upload path does not appear to be valid.
+ERROR - 2021-11-21 16:47:06 --> Could not find the language line "Categoría"
+ERROR - 2021-11-21 16:47:06 --> Could not find the language line "Fecha Inicio"
+ERROR - 2021-11-21 16:47:06 --> Could not find the language line "Fecha Fin"
+ERROR - 2021-11-21 16:47:06 --> Could not find the language line "Monto del gasto "
+ERROR - 2021-11-21 16:47:06 --> Could not find the language line "Notas"
+ERROR - 2021-11-21 16:47:06 --> Severity: Notice  --> Undefined property: Expences_controller::$column_search E:\xampp\htdocs\puntorestaurantv3\system\core\Model.php 51
+ERROR - 2021-11-21 16:47:06 --> Severity: Warning  --> Invalid argument supplied for foreach() E:\xampp\htdocs\puntorestaurantv3\application\models\expence_model.php 46
+ERROR - 2021-11-21 16:47:06 --> Severity: Notice  --> Undefined property: Expences_controller::$column_search E:\xampp\htdocs\puntorestaurantv3\system\core\Model.php 51
+ERROR - 2021-11-21 16:47:06 --> Severity: Warning  --> Invalid argument supplied for foreach() E:\xampp\htdocs\puntorestaurantv3\application\models\expence_model.php 46
+ERROR - 2021-11-21 16:47:08 --> Severity: Notice  --> Undefined property: Expences_controller::$column_search E:\xampp\htdocs\puntorestaurantv3\system\core\Model.php 51
+ERROR - 2021-11-21 16:47:08 --> Severity: Warning  --> Invalid argument supplied for foreach() E:\xampp\htdocs\puntorestaurantv3\application\models\expence_model.php 46
+ERROR - 2021-11-21 16:47:08 --> Severity: Notice  --> Undefined property: Expences_controller::$column_search E:\xampp\htdocs\puntorestaurantv3\system\core\Model.php 51
+ERROR - 2021-11-21 16:47:08 --> Severity: Warning  --> Invalid argument supplied for foreach() E:\xampp\htdocs\puntorestaurantv3\application\models\expence_model.php 46
+ERROR - 2021-11-21 16:47:23 --> Severity: Notice  --> Undefined property: Expences_controller::$column_search E:\xampp\htdocs\puntorestaurantv3\system\core\Model.php 51
+ERROR - 2021-11-21 16:47:23 --> Severity: Warning  --> Invalid argument supplied for foreach() E:\xampp\htdocs\puntorestaurantv3\application\models\expence_model.php 46
+ERROR - 2021-11-21 16:47:23 --> Severity: Notice  --> Undefined property: Expences_controller::$column_search E:\xampp\htdocs\puntorestaurantv3\system\core\Model.php 51
+ERROR - 2021-11-21 16:47:23 --> Severity: Warning  --> Invalid argument supplied for foreach() E:\xampp\htdocs\puntorestaurantv3\application\models\expence_model.php 46
+ERROR - 2021-11-21 16:47:27 --> Could not find the language line "Gastos Hoy"
+ERROR - 2021-11-21 16:47:27 --> Could not find the language line "Balance del Día"
+ERROR - 2021-11-21 16:47:29 --> Could not find the language line "Gastos Hoy"
+ERROR - 2021-11-21 16:47:29 --> Could not find the language line "Balance del Día"
+ERROR - 2021-11-21 16:47:30 --> Could not find the language line "Gastos Hoy"
+ERROR - 2021-11-21 16:47:30 --> Could not find the language line "Balance del Día"
+ERROR - 2021-11-21 16:47:46 --> Could not find the language line "Categoría"
+ERROR - 2021-11-21 16:47:46 --> Could not find the language line "Fecha Inicio"
+ERROR - 2021-11-21 16:47:46 --> Could not find the language line "Fecha Fin"
+ERROR - 2021-11-21 16:47:46 --> Could not find the language line "Monto del gasto "
+ERROR - 2021-11-21 16:47:46 --> Could not find the language line "Notas"
+ERROR - 2021-11-21 16:47:47 --> Severity: Notice  --> Undefined property: Expences_controller::$column_search E:\xampp\htdocs\puntorestaurantv3\system\core\Model.php 51
+ERROR - 2021-11-21 16:47:47 --> Severity: Warning  --> Invalid argument supplied for foreach() E:\xampp\htdocs\puntorestaurantv3\application\models\expence_model.php 46
+ERROR - 2021-11-21 16:47:47 --> Severity: Notice  --> Undefined property: Expences_controller::$column_search E:\xampp\htdocs\puntorestaurantv3\system\core\Model.php 51
+ERROR - 2021-11-21 16:47:47 --> Severity: Warning  --> Invalid argument supplied for foreach() E:\xampp\htdocs\puntorestaurantv3\application\models\expence_model.php 46
+ERROR - 2021-11-21 16:47:47 --> Severity: Notice  --> Undefined property: Expences_controller::$column_search E:\xampp\htdocs\puntorestaurantv3\system\core\Model.php 51
+ERROR - 2021-11-21 16:47:47 --> Severity: Warning  --> Invalid argument supplied for foreach() E:\xampp\htdocs\puntorestaurantv3\application\models\expence_model.php 46
+ERROR - 2021-11-21 16:47:47 --> Severity: Notice  --> Undefined property: Expences_controller::$column_search E:\xampp\htdocs\puntorestaurantv3\system\core\Model.php 51
+ERROR - 2021-11-21 16:47:47 --> Severity: Warning  --> Invalid argument supplied for foreach() E:\xampp\htdocs\puntorestaurantv3\application\models\expence_model.php 46
+ERROR - 2021-11-21 16:47:51 --> Severity: Notice  --> Undefined property: Expences_controller::$column_search E:\xampp\htdocs\puntorestaurantv3\system\core\Model.php 51
+ERROR - 2021-11-21 16:47:51 --> Severity: Warning  --> Invalid argument supplied for foreach() E:\xampp\htdocs\puntorestaurantv3\application\models\expence_model.php 46
+ERROR - 2021-11-21 16:47:51 --> Severity: Notice  --> Undefined property: Expences_controller::$column_search E:\xampp\htdocs\puntorestaurantv3\system\core\Model.php 51
+ERROR - 2021-11-21 16:47:51 --> Severity: Warning  --> Invalid argument supplied for foreach() E:\xampp\htdocs\puntorestaurantv3\application\models\expence_model.php 46
+ERROR - 2021-11-21 16:48:00 --> Could not find the language line "Note"
+ERROR - 2021-11-21 16:48:04 --> The upload path does not appear to be valid.
+ERROR - 2021-11-21 16:48:04 --> Could not find the language line "Categoría"
+ERROR - 2021-11-21 16:48:04 --> Could not find the language line "Fecha Inicio"
+ERROR - 2021-11-21 16:48:04 --> Could not find the language line "Fecha Fin"
+ERROR - 2021-11-21 16:48:04 --> Could not find the language line "Monto del gasto "
+ERROR - 2021-11-21 16:48:04 --> Could not find the language line "Notas"
+ERROR - 2021-11-21 16:48:05 --> Severity: Notice  --> Undefined property: Expences_controller::$column_search E:\xampp\htdocs\puntorestaurantv3\system\core\Model.php 51
+ERROR - 2021-11-21 16:48:05 --> Severity: Warning  --> Invalid argument supplied for foreach() E:\xampp\htdocs\puntorestaurantv3\application\models\expence_model.php 46
+ERROR - 2021-11-21 16:48:05 --> Severity: Notice  --> Undefined property: Expences_controller::$column_search E:\xampp\htdocs\puntorestaurantv3\system\core\Model.php 51
+ERROR - 2021-11-21 16:48:05 --> Severity: Warning  --> Invalid argument supplied for foreach() E:\xampp\htdocs\puntorestaurantv3\application\models\expence_model.php 46
+ERROR - 2021-11-21 16:48:05 --> Severity: Notice  --> Undefined property: Expences_controller::$column_search E:\xampp\htdocs\puntorestaurantv3\system\core\Model.php 51
+ERROR - 2021-11-21 16:48:05 --> Severity: Warning  --> Invalid argument supplied for foreach() E:\xampp\htdocs\puntorestaurantv3\application\models\expence_model.php 46
+ERROR - 2021-11-21 16:48:05 --> Severity: Notice  --> Undefined property: Expences_controller::$column_search E:\xampp\htdocs\puntorestaurantv3\system\core\Model.php 51
+ERROR - 2021-11-21 16:48:05 --> Severity: Warning  --> Invalid argument supplied for foreach() E:\xampp\htdocs\puntorestaurantv3\application\models\expence_model.php 46
+ERROR - 2021-11-21 16:48:22 --> Severity: Notice  --> Undefined property: Expences_controller::$column_search E:\xampp\htdocs\puntorestaurantv3\system\core\Model.php 51
+ERROR - 2021-11-21 16:48:22 --> Severity: Warning  --> Invalid argument supplied for foreach() E:\xampp\htdocs\puntorestaurantv3\application\models\expence_model.php 46
+ERROR - 2021-11-21 16:48:22 --> Severity: Notice  --> Undefined property: Expences_controller::$column_search E:\xampp\htdocs\puntorestaurantv3\system\core\Model.php 51
+ERROR - 2021-11-21 16:48:22 --> Severity: Warning  --> Invalid argument supplied for foreach() E:\xampp\htdocs\puntorestaurantv3\application\models\expence_model.php 46
+ERROR - 2021-11-21 16:48:45 --> Could not find the language line "Categoría"
+ERROR - 2021-11-21 16:48:45 --> Could not find the language line "Fecha Inicio"
+ERROR - 2021-11-21 16:48:45 --> Could not find the language line "Fecha Fin"
+ERROR - 2021-11-21 16:48:45 --> Could not find the language line "Monto del gasto "
+ERROR - 2021-11-21 16:48:45 --> Could not find the language line "Notas"
+ERROR - 2021-11-21 16:48:45 --> Severity: Notice  --> Undefined property: Expences_controller::$column_search E:\xampp\htdocs\puntorestaurantv3\system\core\Model.php 51
+ERROR - 2021-11-21 16:48:45 --> Severity: Warning  --> Invalid argument supplied for foreach() E:\xampp\htdocs\puntorestaurantv3\application\models\expence_model.php 46
+ERROR - 2021-11-21 16:48:45 --> Severity: Notice  --> Undefined property: Expences_controller::$column_search E:\xampp\htdocs\puntorestaurantv3\system\core\Model.php 51
+ERROR - 2021-11-21 16:48:45 --> Severity: Warning  --> Invalid argument supplied for foreach() E:\xampp\htdocs\puntorestaurantv3\application\models\expence_model.php 46
+ERROR - 2021-11-21 16:48:48 --> Severity: Notice  --> Undefined property: Expences_controller::$column_search E:\xampp\htdocs\puntorestaurantv3\system\core\Model.php 51
+ERROR - 2021-11-21 16:48:48 --> Severity: Warning  --> Invalid argument supplied for foreach() E:\xampp\htdocs\puntorestaurantv3\application\models\expence_model.php 46
+ERROR - 2021-11-21 16:48:48 --> Severity: Notice  --> Undefined property: Expences_controller::$column_search E:\xampp\htdocs\puntorestaurantv3\system\core\Model.php 51
+ERROR - 2021-11-21 16:48:48 --> Severity: Warning  --> Invalid argument supplied for foreach() E:\xampp\htdocs\puntorestaurantv3\application\models\expence_model.php 46
+ERROR - 2021-11-21 16:48:53 --> Could not find the language line "Note"
+ERROR - 2021-11-21 16:49:00 --> The upload path does not appear to be valid.
+ERROR - 2021-11-21 16:49:00 --> Could not find the language line "Categoría"
+ERROR - 2021-11-21 16:49:00 --> Could not find the language line "Fecha Inicio"
+ERROR - 2021-11-21 16:49:00 --> Could not find the language line "Fecha Fin"
+ERROR - 2021-11-21 16:49:00 --> Could not find the language line "Monto del gasto "
+ERROR - 2021-11-21 16:49:00 --> Could not find the language line "Notas"
+ERROR - 2021-11-21 16:49:01 --> Severity: Notice  --> Undefined property: Expences_controller::$column_search E:\xampp\htdocs\puntorestaurantv3\system\core\Model.php 51
+ERROR - 2021-11-21 16:49:01 --> Severity: Warning  --> Invalid argument supplied for foreach() E:\xampp\htdocs\puntorestaurantv3\application\models\expence_model.php 46
+ERROR - 2021-11-21 16:49:01 --> Severity: Notice  --> Undefined property: Expences_controller::$column_search E:\xampp\htdocs\puntorestaurantv3\system\core\Model.php 51
+ERROR - 2021-11-21 16:49:01 --> Severity: Warning  --> Invalid argument supplied for foreach() E:\xampp\htdocs\puntorestaurantv3\application\models\expence_model.php 46
+ERROR - 2021-11-21 16:49:02 --> Severity: Notice  --> Undefined property: Expences_controller::$column_search E:\xampp\htdocs\puntorestaurantv3\system\core\Model.php 51
+ERROR - 2021-11-21 16:49:02 --> Severity: Warning  --> Invalid argument supplied for foreach() E:\xampp\htdocs\puntorestaurantv3\application\models\expence_model.php 46
+ERROR - 2021-11-21 16:49:02 --> Severity: Notice  --> Undefined property: Expences_controller::$column_search E:\xampp\htdocs\puntorestaurantv3\system\core\Model.php 51
+ERROR - 2021-11-21 16:49:02 --> Severity: Warning  --> Invalid argument supplied for foreach() E:\xampp\htdocs\puntorestaurantv3\application\models\expence_model.php 46
+ERROR - 2021-11-21 16:49:18 --> Could not find the language line "Categoría"
+ERROR - 2021-11-21 16:49:18 --> Could not find the language line "Fecha Inicio"
+ERROR - 2021-11-21 16:49:18 --> Could not find the language line "Fecha Fin"
+ERROR - 2021-11-21 16:49:18 --> Could not find the language line "Monto del gasto "
+ERROR - 2021-11-21 16:49:18 --> Could not find the language line "Notas"
+ERROR - 2021-11-21 16:49:18 --> Severity: Notice  --> Undefined property: Expences_controller::$column_search E:\xampp\htdocs\puntorestaurantv3\system\core\Model.php 51
+ERROR - 2021-11-21 16:49:18 --> Severity: Warning  --> Invalid argument supplied for foreach() E:\xampp\htdocs\puntorestaurantv3\application\models\expence_model.php 46
+ERROR - 2021-11-21 16:49:18 --> Severity: Notice  --> Undefined property: Expences_controller::$column_search E:\xampp\htdocs\puntorestaurantv3\system\core\Model.php 51
+ERROR - 2021-11-21 16:49:18 --> Severity: Warning  --> Invalid argument supplied for foreach() E:\xampp\htdocs\puntorestaurantv3\application\models\expence_model.php 46
+ERROR - 2021-11-21 16:49:20 --> Severity: Notice  --> Undefined property: Expences_controller::$column_search E:\xampp\htdocs\puntorestaurantv3\system\core\Model.php 51
+ERROR - 2021-11-21 16:49:20 --> Severity: Warning  --> Invalid argument supplied for foreach() E:\xampp\htdocs\puntorestaurantv3\application\models\expence_model.php 46
+ERROR - 2021-11-21 16:49:20 --> Severity: Notice  --> Undefined property: Expences_controller::$column_search E:\xampp\htdocs\puntorestaurantv3\system\core\Model.php 51
+ERROR - 2021-11-21 16:49:20 --> Severity: Warning  --> Invalid argument supplied for foreach() E:\xampp\htdocs\puntorestaurantv3\application\models\expence_model.php 46
+ERROR - 2021-11-21 16:49:23 --> Could not find the language line "Note"
+ERROR - 2021-11-21 16:49:28 --> The upload path does not appear to be valid.
+ERROR - 2021-11-21 16:49:28 --> Could not find the language line "Categoría"
+ERROR - 2021-11-21 16:49:28 --> Could not find the language line "Fecha Inicio"
+ERROR - 2021-11-21 16:49:28 --> Could not find the language line "Fecha Fin"
+ERROR - 2021-11-21 16:49:28 --> Could not find the language line "Monto del gasto "
+ERROR - 2021-11-21 16:49:28 --> Could not find the language line "Notas"
+ERROR - 2021-11-21 16:49:28 --> Severity: Notice  --> Undefined property: Expences_controller::$column_search E:\xampp\htdocs\puntorestaurantv3\system\core\Model.php 51
+ERROR - 2021-11-21 16:49:28 --> Severity: Warning  --> Invalid argument supplied for foreach() E:\xampp\htdocs\puntorestaurantv3\application\models\expence_model.php 46
+ERROR - 2021-11-21 16:49:28 --> Severity: Notice  --> Undefined property: Expences_controller::$column_search E:\xampp\htdocs\puntorestaurantv3\system\core\Model.php 51
+ERROR - 2021-11-21 16:49:28 --> Severity: Warning  --> Invalid argument supplied for foreach() E:\xampp\htdocs\puntorestaurantv3\application\models\expence_model.php 46
+ERROR - 2021-11-21 16:49:30 --> Severity: Notice  --> Undefined property: Expences_controller::$column_search E:\xampp\htdocs\puntorestaurantv3\system\core\Model.php 51
+ERROR - 2021-11-21 16:49:30 --> Severity: Warning  --> Invalid argument supplied for foreach() E:\xampp\htdocs\puntorestaurantv3\application\models\expence_model.php 46
+ERROR - 2021-11-21 16:49:30 --> Severity: Notice  --> Undefined property: Expences_controller::$column_search E:\xampp\htdocs\puntorestaurantv3\system\core\Model.php 51
+ERROR - 2021-11-21 16:49:30 --> Severity: Warning  --> Invalid argument supplied for foreach() E:\xampp\htdocs\puntorestaurantv3\application\models\expence_model.php 46
+ERROR - 2021-11-21 16:51:49 --> The upload path does not appear to be valid.
+ERROR - 2021-11-21 16:51:50 --> Could not find the language line "Categoría"
+ERROR - 2021-11-21 16:51:50 --> Could not find the language line "Fecha Inicio"
+ERROR - 2021-11-21 16:51:50 --> Could not find the language line "Fecha Fin"
+ERROR - 2021-11-21 16:51:50 --> Could not find the language line "Monto del gasto "
+ERROR - 2021-11-21 16:51:50 --> Could not find the language line "Notas"
+ERROR - 2021-11-21 16:51:50 --> Severity: Notice  --> Undefined property: Expences_controller::$column_search E:\xampp\htdocs\puntorestaurantv3\system\core\Model.php 51
+ERROR - 2021-11-21 16:51:50 --> Severity: Warning  --> Invalid argument supplied for foreach() E:\xampp\htdocs\puntorestaurantv3\application\models\expence_model.php 46
+ERROR - 2021-11-21 16:51:50 --> Severity: Notice  --> Undefined property: Expences_controller::$column_search E:\xampp\htdocs\puntorestaurantv3\system\core\Model.php 51
+ERROR - 2021-11-21 16:51:50 --> Severity: Warning  --> Invalid argument supplied for foreach() E:\xampp\htdocs\puntorestaurantv3\application\models\expence_model.php 46
+ERROR - 2021-11-21 16:51:50 --> Severity: Notice  --> Undefined property: Expences_controller::$column_search E:\xampp\htdocs\puntorestaurantv3\system\core\Model.php 51
+ERROR - 2021-11-21 16:51:50 --> Severity: Warning  --> Invalid argument supplied for foreach() E:\xampp\htdocs\puntorestaurantv3\application\models\expence_model.php 46
+ERROR - 2021-11-21 16:51:50 --> Severity: Notice  --> Undefined property: Expences_controller::$column_search E:\xampp\htdocs\puntorestaurantv3\system\core\Model.php 51
+ERROR - 2021-11-21 16:51:50 --> Severity: Warning  --> Invalid argument supplied for foreach() E:\xampp\htdocs\puntorestaurantv3\application\models\expence_model.php 46
+ERROR - 2021-11-21 16:53:51 --> Could not find the language line "Note"
+ERROR - 2021-11-21 16:53:58 --> The upload path does not appear to be valid.
+ERROR - 2021-11-21 16:53:58 --> Could not find the language line "Categoría"
+ERROR - 2021-11-21 16:53:58 --> Could not find the language line "Fecha Inicio"
+ERROR - 2021-11-21 16:53:58 --> Could not find the language line "Fecha Fin"
+ERROR - 2021-11-21 16:53:58 --> Could not find the language line "Monto del gasto "
+ERROR - 2021-11-21 16:53:58 --> Could not find the language line "Notas"
+ERROR - 2021-11-21 16:53:58 --> Severity: Notice  --> Undefined property: Expences_controller::$column_search E:\xampp\htdocs\puntorestaurantv3\system\core\Model.php 51
+ERROR - 2021-11-21 16:53:58 --> Severity: Notice  --> Undefined property: Expences_controller::$column_search E:\xampp\htdocs\puntorestaurantv3\system\core\Model.php 51
+ERROR - 2021-11-21 16:53:58 --> Severity: Warning  --> Invalid argument supplied for foreach() E:\xampp\htdocs\puntorestaurantv3\application\models\expence_model.php 46
+ERROR - 2021-11-21 16:53:58 --> Severity: Warning  --> Invalid argument supplied for foreach() E:\xampp\htdocs\puntorestaurantv3\application\models\expence_model.php 46
+ERROR - 2021-11-21 16:53:58 --> Severity: Notice  --> Undefined property: Expences_controller::$column_search E:\xampp\htdocs\puntorestaurantv3\system\core\Model.php 51
+ERROR - 2021-11-21 16:53:58 --> Severity: Warning  --> Invalid argument supplied for foreach() E:\xampp\htdocs\puntorestaurantv3\application\models\expence_model.php 46
+ERROR - 2021-11-21 16:53:58 --> Severity: Notice  --> Undefined property: Expences_controller::$column_search E:\xampp\htdocs\puntorestaurantv3\system\core\Model.php 51
+ERROR - 2021-11-21 16:53:58 --> Severity: Warning  --> Invalid argument supplied for foreach() E:\xampp\htdocs\puntorestaurantv3\application\models\expence_model.php 46
+ERROR - 2021-11-21 16:55:47 --> Could not find the language line "Categoría"
+ERROR - 2021-11-21 16:55:47 --> Could not find the language line "Fecha Inicio"
+ERROR - 2021-11-21 16:55:47 --> Could not find the language line "Fecha Fin"
+ERROR - 2021-11-21 16:55:47 --> Could not find the language line "Monto del gasto "
+ERROR - 2021-11-21 16:55:47 --> Could not find the language line "Notas"
+ERROR - 2021-11-21 16:55:47 --> Severity: Notice  --> Undefined property: Expences_controller::$column_search E:\xampp\htdocs\puntorestaurantv3\system\core\Model.php 51
+ERROR - 2021-11-21 16:55:47 --> Severity: Notice  --> Undefined property: Expences_controller::$column_search E:\xampp\htdocs\puntorestaurantv3\system\core\Model.php 51
+ERROR - 2021-11-21 16:55:47 --> Severity: Warning  --> Invalid argument supplied for foreach() E:\xampp\htdocs\puntorestaurantv3\application\models\expence_model.php 46
+ERROR - 2021-11-21 16:55:47 --> Severity: Warning  --> Invalid argument supplied for foreach() E:\xampp\htdocs\puntorestaurantv3\application\models\expence_model.php 46
+ERROR - 2021-11-21 16:55:47 --> Severity: Notice  --> Undefined property: Expences_controller::$column_search E:\xampp\htdocs\puntorestaurantv3\system\core\Model.php 51
+ERROR - 2021-11-21 16:55:47 --> Severity: Warning  --> Invalid argument supplied for foreach() E:\xampp\htdocs\puntorestaurantv3\application\models\expence_model.php 46
+ERROR - 2021-11-21 16:55:47 --> Severity: Notice  --> Undefined property: Expences_controller::$column_search E:\xampp\htdocs\puntorestaurantv3\system\core\Model.php 51
+ERROR - 2021-11-21 16:55:47 --> Severity: Warning  --> Invalid argument supplied for foreach() E:\xampp\htdocs\puntorestaurantv3\application\models\expence_model.php 46
+ERROR - 2021-11-21 16:55:59 --> The upload path does not appear to be valid.
+ERROR - 2021-11-21 16:55:59 --> Could not find the language line "Categoría"
+ERROR - 2021-11-21 16:55:59 --> Could not find the language line "Fecha Inicio"
+ERROR - 2021-11-21 16:55:59 --> Could not find the language line "Fecha Fin"
+ERROR - 2021-11-21 16:55:59 --> Could not find the language line "Monto del gasto "
+ERROR - 2021-11-21 16:55:59 --> Could not find the language line "Notas"
+ERROR - 2021-11-21 16:56:00 --> Severity: Notice  --> Undefined property: Expences_controller::$column_search E:\xampp\htdocs\puntorestaurantv3\system\core\Model.php 51
+ERROR - 2021-11-21 16:56:00 --> Severity: Warning  --> Invalid argument supplied for foreach() E:\xampp\htdocs\puntorestaurantv3\application\models\expence_model.php 46
+ERROR - 2021-11-21 16:56:00 --> Severity: Notice  --> Undefined property: Expences_controller::$column_search E:\xampp\htdocs\puntorestaurantv3\system\core\Model.php 51
+ERROR - 2021-11-21 16:56:00 --> Severity: Warning  --> Invalid argument supplied for foreach() E:\xampp\htdocs\puntorestaurantv3\application\models\expence_model.php 46
+ERROR - 2021-11-21 16:56:00 --> Severity: Notice  --> Undefined property: Expences_controller::$column_search E:\xampp\htdocs\puntorestaurantv3\system\core\Model.php 51
+ERROR - 2021-11-21 16:56:00 --> Severity: Warning  --> Invalid argument supplied for foreach() E:\xampp\htdocs\puntorestaurantv3\application\models\expence_model.php 46
+ERROR - 2021-11-21 16:56:00 --> Severity: Notice  --> Undefined property: Expences_controller::$column_search E:\xampp\htdocs\puntorestaurantv3\system\core\Model.php 51
+ERROR - 2021-11-21 16:56:00 --> Severity: Warning  --> Invalid argument supplied for foreach() E:\xampp\htdocs\puntorestaurantv3\application\models\expence_model.php 46
+ERROR - 2021-11-21 16:56:06 --> Severity: Notice  --> Undefined property: Expences_controller::$column_search E:\xampp\htdocs\puntorestaurantv3\system\core\Model.php 51
+ERROR - 2021-11-21 16:56:06 --> Severity: Warning  --> Invalid argument supplied for foreach() E:\xampp\htdocs\puntorestaurantv3\application\models\expence_model.php 46
+ERROR - 2021-11-21 16:56:06 --> Severity: Notice  --> Undefined property: Expences_controller::$column_search E:\xampp\htdocs\puntorestaurantv3\system\core\Model.php 51
+ERROR - 2021-11-21 16:56:06 --> Severity: Warning  --> Invalid argument supplied for foreach() E:\xampp\htdocs\puntorestaurantv3\application\models\expence_model.php 46
+ERROR - 2021-11-21 16:56:09 --> Severity: Notice  --> Undefined property: Expences_controller::$column_search E:\xampp\htdocs\puntorestaurantv3\system\core\Model.php 51
+ERROR - 2021-11-21 16:56:09 --> Severity: Warning  --> Invalid argument supplied for foreach() E:\xampp\htdocs\puntorestaurantv3\application\models\expence_model.php 46
+ERROR - 2021-11-21 16:56:09 --> Severity: Notice  --> Undefined property: Expences_controller::$column_search E:\xampp\htdocs\puntorestaurantv3\system\core\Model.php 51
+ERROR - 2021-11-21 16:56:09 --> Severity: Warning  --> Invalid argument supplied for foreach() E:\xampp\htdocs\puntorestaurantv3\application\models\expence_model.php 46
+ERROR - 2021-11-21 16:56:13 --> Severity: Notice  --> Undefined property: Expences_controller::$column_search E:\xampp\htdocs\puntorestaurantv3\system\core\Model.php 51
+ERROR - 2021-11-21 16:56:13 --> Severity: Warning  --> Invalid argument supplied for foreach() E:\xampp\htdocs\puntorestaurantv3\application\models\expence_model.php 46
+ERROR - 2021-11-21 16:56:13 --> Severity: Notice  --> Undefined property: Expences_controller::$column_search E:\xampp\htdocs\puntorestaurantv3\system\core\Model.php 51
+ERROR - 2021-11-21 16:56:13 --> Severity: Warning  --> Invalid argument supplied for foreach() E:\xampp\htdocs\puntorestaurantv3\application\models\expence_model.php 46
+ERROR - 2021-11-21 17:33:13 --> Could not find the language line "Gastos Hoy"
+ERROR - 2021-11-21 17:33:13 --> Could not find the language line "Balance del Día"

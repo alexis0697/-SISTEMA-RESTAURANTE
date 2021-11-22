@@ -73,6 +73,36 @@
          </div>
       </div>
    </div>
+   <div class="card">
+      <div class="card-header bg-info">
+         <h3 class="my-0">Reporte de Ventas Diarias (Restaurante/ Delivery)</h3>
+      </div>
+      <div class="card-body">
+         <div class="row">
+            <div class="col-md-5">
+               <div class="form-group">
+                  <label><?= label('SelectRange'); ?></label>
+                  <div class="input-group margin-bottom-sm">
+                     <span class="input-group-addon RangePicker"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i></span>
+                     <input class="form-control" id="ReporteDeliveryRange" type="text" name="ReporteDeliveryRange" />
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-2">
+               <button style="margin-top: 23px;" class="cancelBtn btn btn-picker" type="button" onclick="getDailyCutOffReport();"><?= label('GetReport'); ?></button>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-12">
+               <div class="table-responsive">
+                  <div id="dailyCutOff" >
+                     <h1>Seleccione una fecha para mostrar</h1>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
 
    <div class="card">
       <div class="card-header bg-info">
@@ -380,6 +410,12 @@
             format: 'DD/MM/YYYY'
          }
       });
+      $('input[name="ReporteDeliveryRange"]').daterangepicker({
+         locale: {
+            format: 'DD/MM/YYYY'
+         }
+      });
+      
       var d = new Date().getFullYear();
       $('#ProductRange').val('01/01/' + d + ' - 12/31/' + d);
       $('#CustomerRange').val('01/01/' + d + ' - 12/31/' + d);
@@ -564,11 +600,14 @@
          }
       });
    }
-
+   //reporte de factura y ventas diarias
    function getDailySellsReport() {
       var Range = $('#ReporteVentasRange').val();
-      var start = Range.slice(6, 10) + '-' + Range.slice(0, 2) + '-' + Range.slice(3, 5);
-      var end = Range.slice(19, 23) + '-' + Range.slice(13, 15) + '-' + Range.slice(16, 18);
+      var start = Range.slice(6, 10) + '-' + Range.slice(3, 5) + '-' + Range.slice(0, 2);
+      var end = Range.slice(19, 23) + '-' + Range.slice(16, 18)+ '-' + Range.slice(13, 15) ;
+      // ajax set data to database
+      console.log(start);
+      console.log(end);
       // ajax set data to database
       $.ajax({
          url: "<?php echo site_url('reports/getDailySellsReport') ?>/",
@@ -585,7 +624,29 @@
          }
       });
    }
-
+   function getDailyCutOffReport() {
+      var Range = $('#ReporteDeliveryRange').val();
+      var start = Range.slice(6, 10) + '-' + Range.slice(3, 5) + '-' + Range.slice(0, 2);
+      var end = Range.slice(19, 23) + '-' + Range.slice(16, 18)+ '-' + Range.slice(13, 15) ;
+      // ajax set data to database
+      console.log(start);
+      console.log(end);
+      // ajax set data to database
+      $.ajax({
+         url: "<?php echo site_url('reports/getDailyCutsOffReport') ?>/",
+         type: "POST",
+         data: {
+            start: start,
+            end: end
+         },
+         success: function(data) {
+            $('#dailyCutOff').html(data);
+         },
+         error: function(jqXHR, textStatus, errorThrown) {
+            alert("error");
+         }
+      });
+   }
    function getRegisterReport() {
       var store_id = $('#StoresSelect').find('option:selected').val();
       var Range = $('#RegisterRange').val();

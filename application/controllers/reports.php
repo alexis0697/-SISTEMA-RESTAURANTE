@@ -59,14 +59,15 @@ class Reports extends CI_Controller
     {
         $item = 1;
         $comprobante = "";
-        $date = "";
         $totalDay = 0;
+        $result="";
         $start = $this->input->post('start');
         $end = $this->input->post('end');
         $flag = false;
         try {
             $dailySales = Sale::find_by_sql("SELECT created_at as date, typedocument_id as comprobante,COUNT(typedocument_id) as total_comprobante,SUM(paid) as pagado FROM `zarest_sales` WHERE created_at between '$start' AND '$end' GROUP BY DAY(created_at),(typedocument_id);");
-            $dailyTotals = Sale::find_by_sql("SELECT created_at as date, typedocument_id as comprobante,COUNT(typedocument_id) as total_comprobante,SUM(paid) as pagado FROM `zarest_sales` WHERE created_at between '$start' AND '$end' GROUP BY DAY(created_at),(typedocument_id);");
+            if(count($dailySales)!=0){
+                $dailyTotals = Sale::find_by_sql("SELECT created_at as date, typedocument_id as comprobante,COUNT(typedocument_id) as total_comprobante,SUM(paid) as pagado FROM `zarest_sales` WHERE created_at between '$start' AND '$end' GROUP BY DAY(created_at),(typedocument_id);");
             $result = '<table id="tblVentasDia" class="table table-striped table-bordered" cellspacing="0" width="100%">
         <thead>
            <tr>
@@ -111,8 +112,67 @@ class Reports extends CI_Controller
                 }
                 $item++;
             }
-
             $result .= '</tbody></table>';
+            }else{
+                //$result.="SELECT created_at as date, typedocument_id as comprobante,COUNT(typedocument_id) as total_comprobante,SUM(paid) as pagado FROM `zarest_sales` WHERE created_at between '$start' AND '$end' GROUP BY DAY(created_at),(typedocument_id);";
+                $result .= '<h1>No se encuentran resultados</h1>';
+            }
+
+            
+        } catch (\Throwable $th) {
+            $result .= $th;
+        }
+
+        echo $result;
+    }
+    public function getDailyCutsOffReport()
+    {
+        $item = 1;
+        $comprobante = "";
+        $totalDay = 0;
+        $result="";
+        $start = $this->input->post('start');
+        $end = $this->input->post('end');
+        $flag = false;
+        try {
+            $dailySales = Sale::find_by_sql("SELECT closed_at as fecha_corte, cash_total as amount, cash_sub as monto_cortado, delivery, note, closed_by FROM `zarest_registers_all` WHERE closed_at between '$start' AND '$end' GROUP BY DAY(closed_at);");
+            if(count($dailySales)!=0){
+            $result = '<table id="tblVentasDia" class="table table-striped table-bordered" cellspacing="0" width="100%">
+        <thead>
+           <tr>
+              <th>Item</th>
+              <th>Fecha corte</th>
+              <th>Monto total</th>
+              <th>Total del ingresado</th>
+              <th>Restaurante</th>
+              <th>Delivery</th>
+              <th>Corte hecho por</th>
+              <th>Notas</th>
+           </tr>
+        </thead>
+        <tbody>';
+            foreach ($dailySales as $dailySale) {
+                $date = date("Y/m/d", strtotime($dailySale->fecha_corte));
+                $username =  User::find($dailySale->closed_by);
+                $result .= "<tr>
+                        <td>$item</td>
+                        <td>$date</td>
+                        <td>" . number_format((float)$dailySale->amount, $this->setting->decimals, '.', '') . ' ' . $this->setting->currency . "</td>
+                        <td>" . number_format((float)$dailySale->monto_cortado, $this->setting->decimals, '.', '') . ' ' . $this->setting->currency . "</td>
+                        <td>" . number_format((float)($dailySale->monto_cortado-$dailySale->delivery), $this->setting->decimals, '.', '') . ' ' . $this->setting->currency . "</td>
+                        <td>" . number_format((float)($dailySale->delivery), $this->setting->decimals, '.', '') . ' ' . $this->setting->currency . "</td>
+                        <td>$username->firstname $username->lastname</td>
+                        <td>$dailySale->note</td>
+                        </tr>";
+                $item++;
+            }
+            $result .= '</tbody></table>';
+            }else{
+                //$result.="SELECT created_at as date, typedocument_id as comprobante,COUNT(typedocument_id) as total_comprobante,SUM(paid) as pagado FROM `zarest_sales` WHERE created_at between '$start' AND '$end' GROUP BY DAY(created_at),(typedocument_id);";
+                $result .= '<h1>No se encuentran resultados</h1>';
+            }
+
+            
         } catch (\Throwable $th) {
             $result .= $th;
         }

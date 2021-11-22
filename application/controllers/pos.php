@@ -1599,6 +1599,7 @@ class Pos extends CI_Controller
             "status" => 0,
             "store_id" => $this->store,
             "user_id" => $this->user->id,
+            "delivery"=>$this->input->post('deliveryAmount'),
         );
 
         $Register = RegisterAll::create($data);
