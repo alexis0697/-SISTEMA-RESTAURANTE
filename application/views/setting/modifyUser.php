@@ -17,19 +17,14 @@
              <input type="text" name="lastname" value="<?=$user->lastname?>" class="form-control" id="lastname" placeholder="<?=label("lastname");?>">
            </div>
            <div class="form-group">
-               <label for="role"><?=label("Role");?></label><br>
-               <label class="radio-inline">
-                 <input type="radio" name="role" id="role" value="admin"> <?=label("RoleAdimn");?>
-               </label>
-               <label class="radio-inline">
-                 <input type="radio" name="role" id="role" value="sales"> <?=label("RoleSales");?>
-               </label>
-               <label class="radio-inline">
-                 <input type="radio" name="role" id="role" value="waiter"> <?=label("Waiter");?>
-               </label>
-               <label class="radio-inline">
-                 <input type="radio" name="role" id="role" value="kitchen"> <?=label("Kitchen");?>
-               </label>
+           <div class="form-group">
+          <label for="role"><?= label("Role"); ?> *</label><br>
+          <div class="form-group">
+      <select class="form-control" name="role"  id="role">
+        <?php foreach ($roles as $rol) : ?>
+          <option   value="<?= $rol->description; ?>"><?= $rol->name; ?></option>
+        <?php endforeach; ?>
+      </select>
             </div>
 
             <div class="form-group" id="Storeslist">
@@ -71,14 +66,21 @@ $(document).ready(function () {
 
 <?=$user->role==='admin' || $user->role==='sales' ? '$("#Storeslist").slideUp();' : '';?>
 
-$('input[type=radio][name=role]').on('change', function() {
-  if( this.value == "waiter" || this.value == "kitchen" ) //if waiter or kitchen
-  {
+$('#role').change(function(){
+    if($('#role').find(":selected").text()=="Mozo"||$('#role').find(":selected").text()=="Cocinero"){
     $("#Storeslist").slideDown();
   } else {
      $("#Storeslist").slideUp();
   }
 });
+//$('#role :selected').on('change', function() {
+//  if( this.value == "waiter" || this.value == "kitchen" ) //if waiter or kitchen
+//  {
+//    $("#Storeslist").slideDown();
+//  } else {
+//     $("#Storeslist").slideUp();
+//  }
+//});
 
 });
 </script>

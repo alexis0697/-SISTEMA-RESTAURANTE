@@ -177,9 +177,9 @@ $lang['withoutWaiter'] = "Sin mesero";
 $lang['WaiterPhone'] = "Teléfono";
 $lang['WaiterEmail'] = "Email";
 $lang['WaiterStore'] = "Tienda";
-$lang['AddWaiter'] = "Añadir mesero";
-$lang['Waiters'] = "Meseros";
-$lang['Waiter'] = "Meseros";
+$lang['AddWaiter'] = "Añadir Cajero";
+$lang['Waiters'] = "Cajeros";
+$lang['Waiter'] = "Cajero";
 
 // ********************* Supplier page *********************
 $lang['SupplierName'] = "Nombre / Razón Social del proveedor";

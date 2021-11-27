@@ -7,7 +7,7 @@
   </div>
   <div class="card">
     <div class="card-header bg-info">
-    <h3 class="my-0">Listado de Meseros</h3>
+    <h3 class="my-0">Listado de Cajeros</h3>
     </div>
     <div class="card-body">
       <div class="row">
@@ -31,10 +31,9 @@
                   <tr>
                     <td>
                       <?php
-                      if ($waiter->typedocument == 1) echo "DNI";
+                      if ($waiter->typedocument == 1) echo "DUI";
                       if ($waiter->typedocument == 2) echo "CARNET EXTRANJERÍA";
-                      if ($waiter->typedocument == 3) echo "RUC";
-                      if ($waiter->typedocument == 4) echo "PASAPORTE";
+                      if ($waiter->typedocument == 3) echo "PASAPORTE";
                       ?>
                     </td>
                     <td><?= $waiter->document; ?></td>

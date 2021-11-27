@@ -295,3 +295,33 @@ ERROR - 2021-11-22 11:48:32 --> Could not find the language line "Gastos Hoy"
 ERROR - 2021-11-22 11:48:32 --> Could not find the language line "Balance del Día"
 ERROR - 2021-11-22 11:49:19 --> Could not find the language line "Gastos Hoy"
 ERROR - 2021-11-22 11:49:19 --> Could not find the language line "Balance del Día"
+ERROR - 2021-11-22 11:58:58 --> Could not find the language line "Cambiar estado del plato a servido."
+ERROR - 2021-11-22 11:58:58 --> Could not find the language line "Si cambiar"
+ERROR - 2021-11-22 11:59:00 --> Could not find the language line "IMPRIMIR PEDIDO PARA ENTREGA"
+ERROR - 2021-11-22 11:59:00 --> Could not find the language line "Pedido"
+ERROR - 2021-11-22 11:59:00 --> Could not find the language line "Tipo de Cliente"
+ERROR - 2021-11-22 11:59:00 --> Could not find the language line "NIT"
+ERROR - 2021-11-22 11:59:00 --> Could not find the language line "NIT"
+ERROR - 2021-11-22 11:59:00 --> Could not find the language line "Cambiar estado del plato a servido."
+ERROR - 2021-11-22 11:59:00 --> Could not find the language line "Si cambiar"
+ERROR - 2021-11-22 18:59:01 --> 404 Page Not Found --> files
+ERROR - 2021-11-22 11:59:01 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 405
+ERROR - 2021-11-22 11:59:01 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 425
+ERROR - 2021-11-22 12:02:36 --> Could not find the language line "IMPRIMIR PEDIDO PARA ENTREGA"
+ERROR - 2021-11-22 12:02:36 --> Could not find the language line "Pedido"
+ERROR - 2021-11-22 12:02:36 --> Could not find the language line "Tipo de Cliente"
+ERROR - 2021-11-22 12:02:36 --> Could not find the language line "NIT"
+ERROR - 2021-11-22 12:02:36 --> Could not find the language line "NIT"
+ERROR - 2021-11-22 12:02:36 --> Could not find the language line "Cambiar estado del plato a servido."
+ERROR - 2021-11-22 12:02:36 --> Could not find the language line "Si cambiar"
+ERROR - 2021-11-22 19:02:36 --> 404 Page Not Found --> files
+ERROR - 2021-11-22 12:02:36 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 405
+ERROR - 2021-11-22 12:02:36 --> Severity: Notice  --> A non well formed numeric value encountered E:\xampp\htdocs\puntorestaurantv3\application\controllers\pos.php 425
+ERROR - 2021-11-22 12:02:38 --> Could not find the language line "Cambiar estado del plato a servido."
+ERROR - 2021-11-22 12:02:38 --> Could not find the language line "Si cambiar"
+ERROR - 2021-11-22 12:18:59 --> Could not find the language line "Gastos Hoy"
+ERROR - 2021-11-22 12:18:59 --> Could not find the language line "Balance del Día"
+ERROR - 2021-11-22 12:19:57 --> Could not find the language line "Gastos Hoy"
+ERROR - 2021-11-22 12:19:57 --> Could not find the language line "Balance del Día"
+ERROR - 2021-11-22 12:30:38 --> Could not find the language line "Gastos Hoy"
+ERROR - 2021-11-22 12:30:38 --> Could not find the language line "Balance del Día"

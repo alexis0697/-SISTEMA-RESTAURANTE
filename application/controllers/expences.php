@@ -48,7 +48,7 @@ class Expences extends MY_Controller
                 );
                 $attachment = $data['upload_data']['file_name'];
                 $data = array(
-                    "date" => $fechaGasto,
+                    "date" => $this->input->post('date'),
                     "reference" => $this->input->post('reference'),
                     "category_id" => $this->input->post('category'),
                     "store_id" => $this->input->post('store_id'),
@@ -62,7 +62,7 @@ class Expences extends MY_Controller
                 redirect("expences", "refresh");
             } else {
                 $data = array(
-                    "date" => $fechaGasto,
+                    "date" => $this->input->post('date'),
                     "reference" => $this->input->post('reference'),
                     "category_id" => $this->input->post('category'),
                     "store_id" => $this->input->post('store_id'),
